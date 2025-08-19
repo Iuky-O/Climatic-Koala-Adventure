@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://dvinqlm3mwmwj"]
+
+[ext_resource type="Script" path="res://menina.gd" id="1_k0ewq"]
+[ext_resource type="Texture2D" uid="uid://l2t4sx4jq85d" path="res://assets/character/walk and idle.png" id="2_c718o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iw1ol"]
+atlas = ExtResource("2_c718o")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdqjj"]
+atlas = ExtResource("2_c718o")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdc3k"]
+atlas = ExtResource("2_c718o")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2uqx"]
+atlas = ExtResource("2_c718o")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rjjmk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iw1ol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdqjj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdc3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2uqx")
+}],
+"loop": true,
+"name": &"parada",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vysw7"]
+size = Vector2(13, 19)
+
+[node name="menina" type="CharacterBody2D"]
+script = ExtResource("1_k0ewq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rjjmk")
+animation = &"parada"
+autoplay = "parada"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_vysw7")
