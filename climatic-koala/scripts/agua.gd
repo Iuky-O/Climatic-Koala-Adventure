@@ -7,7 +7,7 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	$"../CanvasLayer/total_agua".text = str("Sementes = ", num_agua)
+	$"../fixo_tela/total_agua".text = str("Sementes = ", num_agua)
 
 
 func _on_body_entered(body: Node2D) -> void:
@@ -22,5 +22,5 @@ func _on_body_entered(body: Node2D) -> void:
 	
 	if visible:
 		num_agua += 1
-		$"../CanvasLayer/total_agua".text = str("Sementes = ", num_agua)
+		$"../fixo_tela/total_agua".text = str("Sementes = ", num_agua)
 		hide()
