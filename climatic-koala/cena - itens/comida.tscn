@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://b08up750a3j6c"]
+
+[ext_resource type="Script" path="res://scripts/comida.gd" id="1_dks2o"]
+[ext_resource type="Texture2D" uid="uid://dtak6tb4do43k" path="res://assets/cenario e itens/Comidas/pão.png" id="1_rj7om"]
+[ext_resource type="Texture2D" uid="uid://bky1nte10plpd" path="res://assets/cenario e itens/Comidas/pão 2.png" id="2_j8xoq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tm4x"]
+atlas = ExtResource("1_rj7om")
+region = Rect2(0, 0, 27, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a77oo"]
+atlas = ExtResource("2_j8xoq")
+region = Rect2(0, 0, 27, 27)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oqim1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tm4x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a77oo")
+}],
+"loop": true,
+"name": &"pão",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ewf28"]
+radius = 5.80276
+height = 23.9392
+
+[node name="comida" type="Area2D"]
+monitorable = false
+script = ExtResource("1_dks2o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_oqim1")
+animation = &"pão"
+autoplay = "pão"
+frame_progress = 0.0921426
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.932006
+scale = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_ewf28")
