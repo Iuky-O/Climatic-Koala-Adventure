@@ -164,7 +164,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vysw7"]
 size = Vector2(13, 19)
 
-[node name="menina" type="CharacterBody2D"]
+[node name="menina" type="CharacterBody2D" groups=["player"]]
+z_index = 5
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_k0ewq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -177,3 +179,6 @@ frame_progress = 0.614898
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_vysw7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

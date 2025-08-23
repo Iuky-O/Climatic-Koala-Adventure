@@ -1,7 +1,16 @@
+#menina
 extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+
+func _ready() -> void:
+	print("---------------------------------------")
+	print("Menina spawnou em: ", global_position)
+	print("Local anterior: ", GameState.local_anterior)
+	print("Local atual: ", GameState.local_atual)
+	print("Marcador atual: ", GameState.marcador_anterior)
+	print("---------------------------------------")
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

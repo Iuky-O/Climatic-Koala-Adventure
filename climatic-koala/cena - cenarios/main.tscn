@@ -1,24 +1,16 @@
 [gd_scene load_steps=6 format=3 uid="uid://b4eco3io2vjak"]
 
-[ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="2_awgvr"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_2ns6y"]
 [ext_resource type="PackedScene" uid="uid://cfefkvjxwlq" path="res://cena - cenarios/agua.tscn" id="3_jq3xs"]
 [ext_resource type="PackedScene" uid="uid://eeegcqsxxvnp" path="res://cena - itens/vidro_agua.tscn" id="4_f6ctx"]
 [ext_resource type="PackedScene" uid="uid://d3q30cdo4lo8s" path="res://cena - cenarios/vila.tscn" id="4_n23iv"]
 [ext_resource type="PackedScene" uid="uid://b08up750a3j6c" path="res://cena - itens/comida.tscn" id="5_cfc60"]
 
 [node name="main" type="Node2D"]
-
-[node name="menina" parent="." instance=ExtResource("2_awgvr")]
-z_index = 3
-position = Vector2(332, 198)
-scale = Vector2(1.5, 1.5)
-
-[node name="Camera2D" type="Camera2D" parent="menina"]
-position = Vector2(-0.666672, 2)
-scale = Vector2(0.666667, 0.666667)
-zoom = Vector2(2, 2)
+script = ExtResource("1_2ns6y")
 
 [node name="agua" parent="." instance=ExtResource("3_jq3xs")]
+visible = false
 z_index = 2
 position = Vector2(355, 238)
 
@@ -43,14 +35,17 @@ offset_right = 69.0
 offset_bottom = 120.0
 
 [node name="vidro_agua" parent="." instance=ExtResource("4_f6ctx")]
+visible = false
 z_index = 3
 position = Vector2(366, 305)
 
 [node name="comida" parent="." instance=ExtResource("5_cfc60")]
+visible = false
 z_index = 3
 position = Vector2(212, 299)
 
 [node name="comida2" parent="." instance=ExtResource("5_cfc60")]
+visible = false
 z_index = 3
 position = Vector2(463, 260)
 
@@ -60,5 +55,3 @@ position = Vector2(463, 260)
 [connection signal="body_entered" from="vidro_agua" to="vidro_agua" method="_on_body_entered"]
 [connection signal="body_entered" from="comida" to="comida" method="_on_body_entered"]
 [connection signal="body_entered" from="comida2" to="comida2" method="_on_body_entered"]
-
-[editable path="menina"]

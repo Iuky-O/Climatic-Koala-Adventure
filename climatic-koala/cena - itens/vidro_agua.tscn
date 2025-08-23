@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://eeegcqsxxvnp"]
 
-[ext_resource type="Script" path="res://cena - itens/vidro_agua.gd" id="1_oqbr8"]
+[ext_resource type="Script" path="res://scripts/vidro_agua.gd" id="1_oqbr8"]
 [ext_resource type="Texture2D" uid="uid://7n2g3r62au55" path="res://assets/cenario e itens/Comidas/agua.png" id="1_r5rsi"]
 [ext_resource type="Texture2D" uid="uid://dxl2cy01thhfu" path="res://assets/cenario e itens/Comidas/agua 2.png" id="2_oefeg"]
 
