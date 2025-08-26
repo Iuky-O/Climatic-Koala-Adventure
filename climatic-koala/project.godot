@@ -15,6 +15,16 @@ run/main_scene="res://cena - cenarios/main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Dados="*res://dados.gd"
+GameState="*res://GameState.gd"
+DialogBox="*res://scripts/dialog_box.gd"
+
+[global_group]
+
+player=""
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

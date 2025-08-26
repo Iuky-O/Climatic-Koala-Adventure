@@ -1,8 +1,21 @@
+#menina
 extends CharacterBody2D
 
-const SPEED = 100.0
+const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+func _ready() -> void:
+	print("---------------------------------------")
+	print("Menina spawnou em: ", global_position)
+	print("Local anterior: ", GameState.local_anterior)
+	print("Local atual: ", GameState.local_atual)
+	#print("Marcador atual: ", GameState.marcador_anterior)
+	print("---------------------------------------")
+
+func _process(delta: float) -> void:
+	#print("Menina spawnou em: ", global_position)
+	pass
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -34,3 +47,11 @@ func _physics_process(delta: float) -> void:
 		$AnimatedSprite2D.play("andando_esquerda")
 	elif Input.is_action_pressed("ui_right"):
 		$AnimatedSprite2D.play("andando_direita")
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_comida_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
