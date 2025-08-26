@@ -18,12 +18,12 @@
 [sub_resource type="LabelSettings" id="LabelSettings_c44fi"]
 font_size = 22
 
-[sub_resource type="SystemFont" id="SystemFont_ojoyx"]
+[sub_resource type="SystemFont" id="SystemFont_hijdf"]
 font_italic = true
 font_weight = 300
 
 [sub_resource type="LabelSettings" id="LabelSettings_wowxs"]
-font = SubResource("SystemFont_ojoyx")
+font = SubResource("SystemFont_hijdf")
 font_size = 23
 shadow_color = Color(0, 0, 0, 0.85098)
 shadow_offset = Vector2(1.5, 1)
@@ -87,6 +87,7 @@ position = Vector2(463, 260)
 [node name="vila" parent="." instance=ExtResource("4_n23iv")]
 
 [node name="DialogBox" type="CanvasLayer" parent="."]
+visible = false
 follow_viewport_scale = 0.001
 script = ExtResource("6_ubs5i")
 

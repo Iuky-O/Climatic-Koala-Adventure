@@ -1,9 +1,15 @@
-[gd_scene load_steps=38 format=4 uid="uid://604hv8v4gshu"]
+[gd_scene load_steps=51 format=4 uid="uid://604hv8v4gshu"]
 
 [ext_resource type="Texture2D" uid="uid://bbhtwakde3yv7" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_077kq"]
 [ext_resource type="Texture2D" uid="uid://bbhsx1pbsed11" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_epum1"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_bkegs"]
 [ext_resource type="Script" path="res://scripts/porta_lanchonete_saida.gd" id="4_pcwlk"]
+[ext_resource type="Script" path="res://scripts/npc_1.gd" id="5_3e7fh"]
+[ext_resource type="PackedScene" uid="uid://bls0vw0qt1tg5" path="res://cena - personagens/npcs.tscn" id="5_42wtp"]
+[ext_resource type="Script" path="res://scripts/npc_2.gd" id="7_2lenx"]
+[ext_resource type="Script" path="res://scripts/npc_3.gd" id="8_bdqck"]
+[ext_resource type="Script" path="res://scripts/npc_4.gd" id="9_wybuv"]
+[ext_resource type="Script" path="res://scripts/dialog_box.gd" id="10_2m26h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3noka"]
 texture = ExtResource("1_077kq")
@@ -4185,6 +4191,31 @@ texture = ExtResource("1_077kq")
 [sub_resource type="TileSet" id="TileSet_13mxm"]
 sources/0 = SubResource("TileSetAtlasSource_5tyyy")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hw88r"]
+size = Vector2(19, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v22sm"]
+size = Vector2(20, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nqnvn"]
+size = Vector2(22, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0jqyh"]
+size = Vector2(22, 25)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tyq3u"]
+font_size = 22
+
+[sub_resource type="SystemFont" id="SystemFont_ojoyx"]
+font_italic = true
+font_weight = 300
+
+[sub_resource type="LabelSettings" id="LabelSettings_5k68j"]
+font = SubResource("SystemFont_ojoyx")
+font_size = 23
+shadow_color = Color(0, 0, 0, 0.85098)
+shadow_offset = Vector2(1.5, 1)
+
 [node name="lanchonete" type="TileMapLayer"]
 
 [node name="chao e paredes" type="TileMapLayer" parent="."]
@@ -4326,4 +4357,114 @@ z_index = 5
 tile_map_data = PackedByteArray("AAAgAAYAAAAGAAIAAAAkAAYAAAAFAAIAAAAhAAYAAAAMAAMAAAAiAAYAAAAMAAMAAAAjAAYAAAAMAAMAAAA=")
 tile_set = SubResource("TileSet_13mxm")
 
+[node name="npc 1" type="Area2D" parent="."]
+script = ExtResource("5_3e7fh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc 1"]
+position = Vector2(397, 236)
+shape = SubResource("RectangleShape2D_hw88r")
+
+[node name="npc 1" parent="npc 1" instance=ExtResource("5_42wtp")]
+position = Vector2(395, 201)
+
+[node name="npc 2" type="Area2D" parent="."]
+script = ExtResource("7_2lenx")
+
+[node name="npc 2" parent="npc 2" instance=ExtResource("5_42wtp")]
+position = Vector2(861, 145)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc 2"]
+position = Vector2(861, 148)
+shape = SubResource("RectangleShape2D_v22sm")
+
+[node name="npc 3" type="Area2D" parent="."]
+position = Vector2(304, 325)
+script = ExtResource("8_bdqck")
+
+[node name="npc 3" parent="npc 3" instance=ExtResource("5_42wtp")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc 3"]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_nqnvn")
+
+[node name="npc 4" type="Area2D" parent="."]
+position = Vector2(600, 384)
+script = ExtResource("9_wybuv")
+
+[node name="npc 4" parent="npc 4" instance=ExtResource("5_42wtp")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc 4"]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_0jqyh")
+
+[node name="DialogBox" type="CanvasLayer" parent="."]
+visible = false
+follow_viewport_scale = 0.001
+script = ExtResource("10_2m26h")
+
+[node name="Panel" type="Panel" parent="DialogBox"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -62.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -465.5
+offset_top = -18.5
+offset_right = 465.5
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "oi
+"
+label_settings = SubResource("LabelSettings_tyq3u")
+horizontal_alignment = 1
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -19.0
+offset_right = -11.0
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+text = ">>>"
+
+[node name="Label2" type="Label" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 17.0
+offset_top = -14.0
+offset_right = 101.0
+offset_bottom = 15.0
+grow_vertical = 2
+text = "nome"
+label_settings = SubResource("LabelSettings_5k68j")
+horizontal_alignment = 1
+uppercase = true
+
 [connection signal="body_entered" from="porta_saida" to="porta_saida" method="_on_body_entered"]
+[connection signal="body_entered" from="npc 1" to="npc 1" method="_on_body_entered"]
+[connection signal="body_exited" from="npc 1" to="npc 1" method="_on_body_exited"]
+[connection signal="body_entered" from="npc 2" to="npc 2" method="_on_body_entered"]
+[connection signal="body_exited" from="npc 2" to="npc 2" method="_on_body_exited"]
+[connection signal="body_entered" from="npc 3" to="npc 3" method="_on_body_entered"]
+[connection signal="body_exited" from="npc 3" to="npc 3" method="_on_body_exited"]
+[connection signal="body_entered" from="npc 4" to="npc 4" method="_on_body_entered"]
+[connection signal="body_exited" from="npc 4" to="npc 4" method="_on_body_exited"]
