@@ -3743,9 +3743,6 @@ script = ExtResource("5_3154y")
 position = Vector2(625, 519)
 shape = SubResource("RectangleShape2D_p7e6o")
 
-[node name="dentro_escola" type="Marker2D" parent="."]
-position = Vector2(624, 460)
-
 [node name="menina" parent="." instance=ExtResource("3_byt1e")]
 position = Vector2(621, 454)
 

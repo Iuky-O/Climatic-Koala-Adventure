@@ -11,6 +11,4 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		GameState.local_anterior = GameState.local_atual
 		GameState.local_atual = "fora_escola"
-		GameState.marcador_anterior = "dentro_escola"  # DE ONDE VEIO
-		GameState.marcador_atual = "fora_escola"
-		get_tree().change_scene_to_file("res://cena - cenarios/main.tscn")
+		get_tree().change_scene_to_file.bind("res://cena - cenarios/main.tscn").call_deferred()

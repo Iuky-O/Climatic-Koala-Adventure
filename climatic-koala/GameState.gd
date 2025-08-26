@@ -1,10 +1,8 @@
 #gamestate
 extends Node
 
-var marcador_anterior = "fora_escola"  
 var local_atual = "fora_escola"
 var local_anterior = ""
-var marcador_atual = "fora_escola"
 
 
 var player_scene = preload("res://cena - personagens/menina.tscn")

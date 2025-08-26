@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfkpcnogdo4gb"]
+
+[ext_resource type="Texture2D" uid="uid://b1tfjndg3gmod" path="res://assets/character/personagens/characters/_srw_character_17-24.png" id="1_3rlqj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_je6ty"]
+atlas = ExtResource("1_3rlqj")
+region = Rect2(336, 0, 48, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqouy"]
+atlas = ExtResource("1_3rlqj")
+region = Rect2(384, 0, 48, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nlpdc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_je6ty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqouy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjdop"]
+size = Vector2(46, 51)
+
+[node name="eduardo" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nlpdc")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_jjdop")

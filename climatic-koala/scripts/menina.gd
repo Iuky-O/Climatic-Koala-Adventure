@@ -9,9 +9,13 @@ func _ready() -> void:
 	print("Menina spawnou em: ", global_position)
 	print("Local anterior: ", GameState.local_anterior)
 	print("Local atual: ", GameState.local_atual)
-	print("Marcador atual: ", GameState.marcador_anterior)
+	#print("Marcador atual: ", GameState.marcador_anterior)
 	print("---------------------------------------")
 
+func _process(delta: float) -> void:
+	#print("Menina spawnou em: ", global_position)
+	pass
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
