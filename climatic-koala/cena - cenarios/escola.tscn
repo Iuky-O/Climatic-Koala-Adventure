@@ -1,10 +1,17 @@
-[gd_scene load_steps=24 format=4 uid="uid://dw8ht4voaou68"]
+[gd_scene load_steps=38 format=4 uid="uid://dw8ht4voaou68"]
 
 [ext_resource type="Texture2D" uid="uid://bbhsx1pbsed11" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="1_os7cc"]
 [ext_resource type="Texture2D" uid="uid://bbhtwakde3yv7" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_gn5md"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_byt1e"]
 [ext_resource type="Texture2D" uid="uid://bi2s3eks2uli" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/cadeira.png" id="4_adcs1"]
 [ext_resource type="Script" path="res://scripts/porta_escola_saida.gd" id="5_3154y"]
+[ext_resource type="Script" path="res://scripts/trigger_dialog_professora.gd" id="6_sy6ly"]
+[ext_resource type="PackedScene" uid="uid://bqwty0hji3coq" path="res://cena - personagens/professora.tscn" id="7_n67mf"]
+[ext_resource type="Script" path="res://scripts/dialog_box.gd" id="8_2jhcm"]
+[ext_resource type="Script" path="res://scripts/trigger_dialog_aluno.gd" id="9_j7iqh"]
+[ext_resource type="PackedScene" uid="uid://bof8fksqip0px" path="res://cena - personagens/alunos.tscn" id="10_drxau"]
+[ext_resource type="Script" path="res://scripts/trigger_dialog_aluno2.gd" id="11_18x5p"]
+[ext_resource type="Script" path="res://scripts/trigger_dialog_aluno3.gd" id="12_la1eq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ufqk"]
 texture = ExtResource("1_os7cc")
@@ -3657,6 +3664,31 @@ sources/0 = SubResource("TileSetAtlasSource_t7qcl")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p7e6o"]
 size = Vector2(76, 18)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_drmue"]
+size = Vector2(22, 24)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hkpt4"]
+font_size = 22
+
+[sub_resource type="SystemFont" id="SystemFont_vr7a3"]
+font_italic = true
+font_weight = 300
+
+[sub_resource type="LabelSettings" id="LabelSettings_uwt5r"]
+font = SubResource("SystemFont_vr7a3")
+font_size = 19
+shadow_color = Color(0, 0, 0, 0.85098)
+shadow_offset = Vector2(1.5, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m4s81"]
+size = Vector2(21.5, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdi8m"]
+size = Vector2(23, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mpdha"]
+size = Vector2(21, 24)
+
 [node name="escola" type="TileMapLayer"]
 
 [node name="chao e parede" type="TileMapLayer" parent="."]
@@ -3746,4 +3778,113 @@ shape = SubResource("RectangleShape2D_p7e6o")
 [node name="menina" parent="." instance=ExtResource("3_byt1e")]
 position = Vector2(621, 454)
 
+[node name="NPC - professora" type="Area2D" parent="."]
+script = ExtResource("6_sy6ly")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC - professora"]
+position = Vector2(466, 227)
+shape = SubResource("RectangleShape2D_drmue")
+
+[node name="professora" parent="NPC - professora" instance=ExtResource("7_n67mf")]
+position = Vector2(466, 226)
+
+[node name="DialogBox" type="CanvasLayer" parent="."]
+follow_viewport_scale = 0.001
+script = ExtResource("8_2jhcm")
+
+[node name="Panel" type="Panel" parent="DialogBox"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -62.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -465.5
+offset_top = -18.5
+offset_right = 465.5
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "oi
+"
+label_settings = SubResource("LabelSettings_hkpt4")
+horizontal_alignment = 1
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -19.0
+offset_right = -11.0
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+text = ">>>"
+
+[node name="Label2" type="Label" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 17.0
+offset_top = -14.0
+offset_right = 101.0
+offset_bottom = 15.0
+grow_vertical = 2
+text = "nome"
+label_settings = SubResource("LabelSettings_uwt5r")
+horizontal_alignment = 1
+uppercase = true
+
+[node name="NPC - Aluno 1" type="Area2D" parent="."]
+script = ExtResource("9_j7iqh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC - Aluno 1"]
+position = Vector2(372, 325.5)
+shape = SubResource("RectangleShape2D_m4s81")
+
+[node name="alunos" parent="NPC - Aluno 1" instance=ExtResource("10_drxau")]
+position = Vector2(372.25, 323)
+
+[node name="NPC - Aluno 2" type="Area2D" parent="."]
+script = ExtResource("11_18x5p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC - Aluno 2"]
+position = Vector2(638, 312)
+shape = SubResource("RectangleShape2D_wdi8m")
+
+[node name="alunos 2" parent="NPC - Aluno 2" instance=ExtResource("10_drxau")]
+position = Vector2(639, 309)
+
+[node name="NPC - Aluno 3" type="Area2D" parent="."]
+script = ExtResource("12_la1eq")
+
+[node name="alunos 3" parent="NPC - Aluno 3" instance=ExtResource("10_drxau")]
+position = Vector2(420.5, 419)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC - Aluno 3"]
+position = Vector2(420, 421)
+shape = SubResource("RectangleShape2D_mpdha")
+
 [connection signal="body_entered" from="porta_vila" to="porta_vila" method="_on_body_entered"]
+[connection signal="body_entered" from="NPC - professora" to="NPC - professora" method="_on_body_entered"]
+[connection signal="body_exited" from="NPC - professora" to="NPC - professora" method="_on_body_exited"]
+[connection signal="body_entered" from="NPC - Aluno 1" to="NPC - Aluno 1" method="_on_body_entered"]
+[connection signal="body_exited" from="NPC - Aluno 1" to="NPC - Aluno 1" method="_on_body_exited"]
+[connection signal="body_entered" from="NPC - Aluno 2" to="NPC - Aluno 2" method="_on_body_entered"]
+[connection signal="body_exited" from="NPC - Aluno 2" to="NPC - Aluno 2" method="_on_body_exited"]
+[connection signal="body_entered" from="NPC - Aluno 3" to="NPC - Aluno 3" method="_on_body_entered"]
+[connection signal="body_exited" from="NPC - Aluno 3" to="NPC - Aluno 3" method="_on_body_exited"]

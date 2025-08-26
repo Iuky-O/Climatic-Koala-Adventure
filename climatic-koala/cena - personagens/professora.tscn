@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://bqwty0hji3coq"]
+
+[ext_resource type="Texture2D" uid="uid://c7f61e4vbnlki" path="res://assets/character/personagens/characters/_srw_character_1-8.png" id="1_vm6m6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkv7x"]
+atlas = ExtResource("1_vm6m6")
+region = Rect2(192, 300, 48, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3qd2i"]
+atlas = ExtResource("1_vm6m6")
+region = Rect2(192, 360, 48, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k84x1"]
+atlas = ExtResource("1_vm6m6")
+region = Rect2(192, 240, 48, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h018g"]
+atlas = ExtResource("1_vm6m6")
+region = Rect2(192, 420, 48, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h21o4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vkv7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3qd2i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k84x1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h018g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_he60k"]
+size = Vector2(41, 49)
+
+[node name="professora" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_h21o4")
+autoplay = "default"
+frame_progress = 0.781956
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_he60k")
