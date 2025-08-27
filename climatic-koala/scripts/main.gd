@@ -36,6 +36,13 @@ func _ready():
 			spawn_position = Vector2(1019, 546)
 		"fora_hospital":
 			spawn_position = Vector2(1606, 1090)
+			
+		"dentro_progresso":
+			spawn_position = Vector2(GameState.local_mapa)
+		"fora_progresso":
+			spawn_position = Vector2(GameState.local_mapa)
+			
+			
 		_:
 			spawn_position = Vector2(371, 300)  # Fallback - nascimento padrão
 	

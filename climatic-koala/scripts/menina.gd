@@ -12,8 +12,9 @@ func _ready() -> void:
 	print("---------------------------------------")
 
 func _process(delta: float) -> void:
-	#print("Menina spawnou em: ", global_position)
-	pass
+	print("Menina esta em: ", global_position)
+	GameState.local_mapa = Vector2(global_position)
+	print("global = ",GameState.local_mapa)
 	
 	
 func _physics_process(delta: float) -> void:
