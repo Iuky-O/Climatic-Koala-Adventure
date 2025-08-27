@@ -4,6 +4,8 @@ extends Node
 var local_atual = "fora_escola"
 var local_anterior = ""
 
+var local_mapa: Vector2
+
 
 var player_scene = preload("res://cena - personagens/menina.tscn")
 var player : Node = null
