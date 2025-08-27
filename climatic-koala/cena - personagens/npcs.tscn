@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bls0vw0qt1tg5"]
+[gd_scene load_steps=25 format=3 uid="uid://bls0vw0qt1tg5"]
 
 [ext_resource type="Texture2D" uid="uid://b1tfjndg3gmod" path="res://assets/character/personagens/characters/_srw_character_17-24.png" id="1_v08l3"]
 [ext_resource type="Texture2D" uid="uid://dsimyge63tf7r" path="res://assets/character/personagens/characters/_srw_character_9-16.png" id="2_mrxrc"]
@@ -71,6 +71,14 @@ region = Rect2(528, 240, 48, 60)
 [sub_resource type="AtlasTexture" id="AtlasTexture_nej5a"]
 atlas = ExtResource("1_v08l3")
 region = Rect2(432, 240, 48, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cltg"]
+atlas = ExtResource("4_hx4ho")
+region = Rect2(432, 0, 48, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4jm6"]
+atlas = ExtResource("4_hx4ho")
+region = Rect2(480, 0, 48, 60)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_drv05"]
 animations = [{
@@ -156,6 +164,17 @@ animations = [{
 "loop": true,
 "name": &"pessoa 7",
 "speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cltg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4jm6")
+}],
+"loop": true,
+"name": &"pessoa 8",
+"speed": 3.0
 }]
 
 [node name="npc" type="CharacterBody2D"]
@@ -167,4 +186,4 @@ shape = SubResource("RectangleShape2D_x7sue")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_drv05")
-animation = &"pessoa 5"
+animation = &"pessoa 3"

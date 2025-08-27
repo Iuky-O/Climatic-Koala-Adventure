@@ -18,12 +18,12 @@
 [sub_resource type="LabelSettings" id="LabelSettings_c44fi"]
 font_size = 22
 
-[sub_resource type="SystemFont" id="SystemFont_hijdf"]
+[sub_resource type="SystemFont" id="SystemFont_s5ylb"]
 font_italic = true
 font_weight = 300
 
 [sub_resource type="LabelSettings" id="LabelSettings_wowxs"]
-font = SubResource("SystemFont_hijdf")
+font = SubResource("SystemFont_s5ylb")
 font_size = 23
 shadow_color = Color(0, 0, 0, 0.85098)
 shadow_offset = Vector2(1.5, 1)

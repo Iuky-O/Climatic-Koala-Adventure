@@ -19,29 +19,25 @@ func _ready():
 		"dentro_escola":
 			spawn_position = Vector2(621, 454)
 		"fora_escola":
-			spawn_position = Vector2(331, 200)
+			spawn_position = Vector2(366, 235)
 		"dentro_lanchonete":
 			spawn_position = Vector2(623, 638)
 		"fora_lanchonete":
 			spawn_position = Vector2(101, 845)
-			
-			
 		"dentro_biblioteca":
-			spawn_position = Vector2(0, 0) #definir
+			spawn_position = Vector2(279, 589)
 		"fora_biblioteca":
-			spawn_position = Vector2(0, 0) #definir
+			spawn_position = Vector2(926, 215)
 		"dentro_mercearia":
-			spawn_position = Vector2(0, 0) #definir
+			spawn_position = Vector2(146, 900)
 		"fora_mercearia":
-			spawn_position = Vector2(0, 0) #definir
+			spawn_position = Vector2(1271, 940)
 		"dentro_hospital":
-			spawn_position = Vector2(0, 0) #definir
+			spawn_position = Vector2(1019, 546)
 		"fora_hospital":
-			spawn_position = Vector2(0, 0) #definir
-			
-			
+			spawn_position = Vector2(1606, 1090)
 		_:
-			spawn_position = Vector2(621, 454)  # Fallback - nascimento padrão
+			spawn_position = Vector2(371, 300)  # Fallback - nascimento padrão
 	
 	print("Spawning em: ", spawn_position)
 	GameState.spawn_player_at(spawn_position, self)
