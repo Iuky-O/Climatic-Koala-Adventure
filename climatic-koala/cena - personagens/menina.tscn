@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=3 uid="uid://dvinqlm3mwmwj"]
 
-[ext_resource type="Script" path="res://scripts/menina.gd" id="1_k0ewq"]
-[ext_resource type="Texture2D" uid="uid://l2t4sx4jq85d" path="res://assets/character/walk and idle.png" id="2_c718o"]
+[ext_resource type="Script" uid="uid://h7gfkakou88c" path="res://scripts/menina.gd" id="1_k0ewq"]
+[ext_resource type="Texture2D" uid="uid://dkr0rn5nb7iq3" path="res://assets/character/walk and idle.png" id="2_c718o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bgnub"]
 atlas = ExtResource("2_c718o")

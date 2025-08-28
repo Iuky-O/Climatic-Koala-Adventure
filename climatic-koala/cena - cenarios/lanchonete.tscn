@@ -1,15 +1,15 @@
 [gd_scene load_steps=51 format=4 uid="uid://604hv8v4gshu"]
 
-[ext_resource type="Texture2D" uid="uid://bbhtwakde3yv7" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_077kq"]
-[ext_resource type="Texture2D" uid="uid://bbhsx1pbsed11" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_epum1"]
+[ext_resource type="Texture2D" uid="uid://bghowop42aovn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_077kq"]
+[ext_resource type="Texture2D" uid="uid://cxewvujohfqmn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_epum1"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_bkegs"]
-[ext_resource type="Script" path="res://scripts/porta_lanchonete_saida.gd" id="4_pcwlk"]
-[ext_resource type="Script" path="res://scripts/npc_1.gd" id="5_3e7fh"]
+[ext_resource type="Script" uid="uid://dfvigbkulbtnx" path="res://scripts/porta_lanchonete_saida.gd" id="4_pcwlk"]
+[ext_resource type="Script" uid="uid://cw8xjqsugouw8" path="res://scripts/npc_1.gd" id="5_3e7fh"]
 [ext_resource type="PackedScene" uid="uid://bls0vw0qt1tg5" path="res://cena - personagens/npcs.tscn" id="5_42wtp"]
-[ext_resource type="Script" path="res://scripts/npc_2.gd" id="7_2lenx"]
-[ext_resource type="Script" path="res://scripts/npc_3.gd" id="8_bdqck"]
-[ext_resource type="Script" path="res://scripts/npc_4.gd" id="9_wybuv"]
-[ext_resource type="Script" path="res://scripts/dialog_box.gd" id="10_2m26h"]
+[ext_resource type="Script" uid="uid://ov3o1a6xui8e" path="res://scripts/npc_2.gd" id="7_2lenx"]
+[ext_resource type="Script" uid="uid://dt0e5hin7k7yn" path="res://scripts/npc_3.gd" id="8_bdqck"]
+[ext_resource type="Script" uid="uid://bji34mgbhhcbx" path="res://scripts/npc_4.gd" id="9_wybuv"]
+[ext_resource type="Script" uid="uid://dx04tocw8mxxw" path="res://scripts/dialog_box.gd" id="10_2m26h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3noka"]
 texture = ExtResource("1_077kq")

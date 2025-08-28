@@ -1,9 +1,9 @@
 [gd_scene load_steps=35 format=4 uid="uid://b30j0pnew2k7q"]
 
-[ext_resource type="Texture2D" uid="uid://bbhtwakde3yv7" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
-[ext_resource type="Texture2D" uid="uid://bbhsx1pbsed11" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_ugakb"]
+[ext_resource type="Texture2D" uid="uid://bghowop42aovn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
+[ext_resource type="Texture2D" uid="uid://cxewvujohfqmn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_ugakb"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_5lul3"]
-[ext_resource type="Texture2D" uid="uid://bh080v7ombmdj" path="res://assets/cenario e itens/Interiores/Interior.png" id="4_t223l"]
+[ext_resource type="Texture2D" uid="uid://du5jbpd01yv8b" path="res://assets/cenario e itens/Interiores/Interior.png" id="4_t223l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s47rh"]
 texture = ExtResource("1_22gtn")

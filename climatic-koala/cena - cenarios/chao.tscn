@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=4 uid="uid://cy6y6xwocfdkc"]
 
-[ext_resource type="Texture2D" uid="uid://cd6mcepbep1ch" path="res://assets/cenario e itens/summer tilemap.png" id="1_i6wfq"]
-[ext_resource type="Texture2D" uid="uid://cxgpxp8wgorld" path="res://assets/cenario e itens/summer and spring items.png" id="2_vj8jp"]
+[ext_resource type="Texture2D" uid="uid://c1nabgcer820n" path="res://assets/cenario e itens/summer tilemap.png" id="1_i6wfq"]
+[ext_resource type="Texture2D" uid="uid://bpvfyk40nr7mr" path="res://assets/cenario e itens/summer and spring items.png" id="2_vj8jp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ddfph"]
 texture = ExtResource("1_i6wfq")

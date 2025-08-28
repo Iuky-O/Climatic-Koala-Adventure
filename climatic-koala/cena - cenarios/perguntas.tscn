@@ -1,5 +1,7 @@
 [gd_scene load_steps=23 format=4 uid="uid://doy50dy86cg8f"]
 
+[ext_resource type="Script" uid="uid://c1o6x1o4eygud" path="res://scripts/caixa_pergunta.gd" id="1_phefd"]
+[ext_resource type="Texture2D" uid="uid://bghowop42aovn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_yynyd"]
 [ext_resource type="Script" path="res://scripts/caixa_pergunta.gd" id="1_phefd"]
 [ext_resource type="Texture2D" uid="uid://bbhtwakde3yv7" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_yynyd"]
 [ext_resource type="Texture2D" uid="uid://cgpmmm3rl7a0s" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="3_48nsq"]
