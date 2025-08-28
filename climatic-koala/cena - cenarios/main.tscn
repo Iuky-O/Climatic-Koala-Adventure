@@ -221,7 +221,6 @@ z_index = 3
 position = Vector2(463, 260)
 
 [node name="vila" parent="." instance=ExtResource("4_n23iv")]
-visible = false
 
 [node name="DialogBox" type="CanvasLayer" parent="."]
 visible = false
