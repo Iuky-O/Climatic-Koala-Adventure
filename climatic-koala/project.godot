@@ -20,7 +20,7 @@ config/icon="res://icon.svg"
 Dados="*res://dados.gd"
 GameState="*res://GameState.gd"
 DialogBox="*res://scripts/dialog_box.gd"
-DialogManager="*res://cena - cenarios/dialog_manager.tscn"
+Menina="*res://cena - personagens/menina.tscn"
 
 [global_group]
 

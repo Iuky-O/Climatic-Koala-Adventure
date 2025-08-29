@@ -15,7 +15,8 @@ func _process(delta: float) -> void:
 	print("Menina esta em: ", global_position)
 	GameState.local_mapa = Vector2(global_position)
 	print("global = ",GameState.local_mapa)
-	
+	$fixo_tela/total_agua.text = str("Água = ", Dados.agua)
+	$fixo_tela/total_comida.text = str("Comida = ", Dados.comida)
 	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

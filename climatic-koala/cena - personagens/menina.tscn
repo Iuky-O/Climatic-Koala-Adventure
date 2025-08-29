@@ -1,7 +1,11 @@
-[gd_scene load_steps=25 format=3 uid="uid://dvinqlm3mwmwj"]
+[gd_scene load_steps=36 format=4 uid="uid://dvinqlm3mwmwj"]
 
 [ext_resource type="Script" uid="uid://h7gfkakou88c" path="res://scripts/menina.gd" id="1_k0ewq"]
 [ext_resource type="Texture2D" uid="uid://dkr0rn5nb7iq3" path="res://assets/character/walk and idle.png" id="2_c718o"]
+[ext_resource type="Texture2D" uid="uid://dxtvroq42rcks" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="4_l2yh2"]
+[ext_resource type="PackedScene" uid="uid://b85cde3vlbppl" path="res://cena - itens/barra_progresso.tscn" id="5_vajr2"]
+[ext_resource type="Script" uid="uid://dgdhugi2l1bfk" path="res://cena - personagens/entra_pergunta.gd" id="6_l2yh2"]
+[ext_resource type="Texture2D" uid="uid://i84ambqp4hlv" path="res://assets/GUI/pixel/Buttons/quest_button.png" id="6_vajr2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bgnub"]
 atlas = ExtResource("2_c718o")
@@ -164,7 +168,143 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vysw7"]
 size = Vector2(13, 19)
 
-[node name="menina" type="CharacterBody2D" groups=["player"]]
+[sub_resource type="GDScript" id="GDScript_l2yh2"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+
+func _on_mouse_entered() -> void:
+		GameState.local_anterior = GameState.local_atual
+		GameState.local_atual = \"dentro_progresso\"
+		get_tree().change_scene_to_file.bind(\"res://cena - cenarios/perguntas.tscn\").call_deferred() #mudar pra verdadeira
+"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bkhpv"]
+texture = ExtResource("4_l2yh2")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_icf60"]
+texture = ExtResource("4_l2yh2")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_gtmra"]
+sources/0 = SubResource("TileSetAtlasSource_bkhpv")
+sources/1 = SubResource("TileSetAtlasSource_icf60")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0j5ft"]
+texture = ExtResource("4_l2yh2")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5c7gr"]
+sources/0 = SubResource("TileSetAtlasSource_0j5ft")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2r6yo"]
+size = Vector2(61, 41)
+
+[node name="menina" type="CharacterBody2D"]
 z_index = 5
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_k0ewq")
@@ -182,3 +322,72 @@ shape = SubResource("RectangleShape2D_vysw7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
+
+[node name="fixo_tela" type="CanvasLayer" parent="."]
+
+[node name="total_agua" type="Label" parent="fixo_tela"]
+offset_left = 30.0
+offset_top = 80.0
+offset_right = 70.0
+offset_bottom = 103.0
+text = "agua"
+metadata/_edit_use_anchors_ = true
+
+[node name="total_comida" type="Label" parent="fixo_tela"]
+offset_left = 29.0
+offset_top = 107.0
+offset_right = 86.0
+offset_bottom = 130.0
+text = "comida"
+metadata/_edit_use_anchors_ = true
+
+[node name="total_sem" type="Label" parent="fixo_tela"]
+offset_left = 29.0
+offset_top = 97.0
+offset_right = 69.0
+offset_bottom = 120.0
+metadata/_edit_use_anchors_ = true
+
+[node name="entra_progresso" type="Area2D" parent="fixo_tela"]
+visible = false
+script = SubResource("GDScript_l2yh2")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="fixo_tela/entra_progresso"]
+scale = Vector2(1.5, 1.5)
+tile_map_data = PackedByteArray("AAAAAAAAAAAEAAAAAAABAAAAAAAFAAAAAAACAAAAAAAGAAAAAAAAAAEAAAAEAAEAAAABAAEAAAAFAAEAAAACAAEAAAAGAAEAAAA=")
+tile_set = SubResource("TileSet_gtmra")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="fixo_tela/entra_progresso"]
+scale = Vector2(1.5, 1.5)
+tile_map_data = PackedByteArray("AAABAAAAAAAPAAEAAAABAAEAAAAOAAEAAAA=")
+tile_set = SubResource("TileSet_5c7gr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fixo_tela/entra_progresso"]
+position = Vector2(35.5, 23.5)
+shape = SubResource("RectangleShape2D_2r6yo")
+
+[node name="barra_progresso" parent="fixo_tela" instance=ExtResource("5_vajr2")]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -51.0
+offset_top = 15.0
+offset_right = 49.0
+offset_bottom = 20.0
+grow_horizontal = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="fixo_tela"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -125.0
+offset_right = 907.0
+offset_bottom = 1032.0
+grow_horizontal = 0
+scale = Vector2(0.1, 0.1)
+theme_override_icons/icon = ExtResource("6_vajr2")
+flat = true
+script = ExtResource("6_l2yh2")
+
+[connection signal="mouse_entered" from="fixo_tela/entra_progresso" to="fixo_tela/entra_progresso" method="_on_mouse_entered"]
