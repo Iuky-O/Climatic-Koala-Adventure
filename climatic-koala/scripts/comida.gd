@@ -5,11 +5,12 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	$"../fixo_tela/total_comida".text = str("Comida = ", Dados.comida)
+	#$"../fixo_tela/total_comida".text = str("Comida = ", Dados.comida)
+	pass
 
 
 func _on_body_entered(body: Node2D) -> void:
 	if visible:
 		Dados.comida += 1
-		$"../fixo_tela/total_comida".text = str("Comida = ", Dados.comida)
+		#$"../fixo_tela/total_comida".text = str("Comida = ", Dados.comida)
 		hide()
