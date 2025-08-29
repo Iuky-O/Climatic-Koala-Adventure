@@ -2,20 +2,19 @@
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_2ns6y"]
 [ext_resource type="Script" path="res://scripts/entra_progresso.gd" id="3_76hag"]
-[ext_resource type="Script" uid="uid://bq1b8jtm34m8w" path="res://scripts/main.gd" id="1_2ns6y"]
 [ext_resource type="PackedScene" uid="uid://cfefkvjxwlq" path="res://cena - cenarios/agua.tscn" id="3_jq3xs"]
-[ext_resource type="Texture2D" uid="uid://cgpmmm3rl7a0s" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="4_0cum7"]
+[ext_resource type="Texture2D" uid="uid://dke3qcby1rcyl" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="4_0cum7"]
 [ext_resource type="PackedScene" uid="uid://eeegcqsxxvnp" path="res://cena - itens/vidro_agua.tscn" id="4_f6ctx"]
 [ext_resource type="PackedScene" uid="uid://d3q30cdo4lo8s" path="res://cena - cenarios/vila.tscn" id="4_n23iv"]
 [ext_resource type="PackedScene" uid="uid://b08up750a3j6c" path="res://cena - itens/comida.tscn" id="5_cfc60"]
 [ext_resource type="PackedScene" uid="uid://cdtkkvdabd3u6" path="res://cena - personagens/iumy.tscn" id="6_u42ks"]
-[ext_resource type="Script" uid="uid://dx04tocw8mxxw" path="res://scripts/dialog_box.gd" id="6_ubs5i"]
-[ext_resource type="Script" uid="uid://dk40ccl1e5dx1" path="res://scripts/trigger_dialog_iumy.gd" id="7_d7mcl"]
-[ext_resource type="Script" uid="uid://de721en8agf8a" path="res://scripts/trigger_dialog_leticia.gd" id="8_4hmba"]
+[ext_resource type="Script" path="res://scripts/dialog_box.gd" id="6_ubs5i"]
+[ext_resource type="Script" path="res://scripts/trigger_dialog_iumy.gd" id="7_d7mcl"]
+[ext_resource type="Script" path="res://scripts/trigger_dialog_leticia.gd" id="8_4hmba"]
 [ext_resource type="PackedScene" uid="uid://c1hpturoaeqh8" path="res://cena - personagens/leticia.tscn" id="9_sxqdf"]
-[ext_resource type="Script" uid="uid://bmlsln7khbf0l" path="res://scripts/trigger_dialog_eduardo.gd" id="10_gd18x"]
+[ext_resource type="Script" path="res://scripts/trigger_dialog_eduardo.gd" id="10_gd18x"]
 [ext_resource type="PackedScene" uid="uid://dfkpcnogdo4gb" path="res://cena - personagens/eduardo.tscn" id="11_fir5k"]
-[ext_resource type="Script" uid="uid://dmvfe2nradjv1" path="res://scripts/trigger_dialog_nicolas.gd" id="12_wd5ld"]
+[ext_resource type="Script" path="res://scripts/trigger_dialog_nicolas.gd" id="12_wd5ld"]
 [ext_resource type="PackedScene" uid="uid://btif44deo5p8y" path="res://cena - personagens/nicolas.tscn" id="13_t41xd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwd5p"]
@@ -136,12 +135,12 @@ size = Vector2(61, 41)
 [sub_resource type="LabelSettings" id="LabelSettings_c44fi"]
 font_size = 22
 
-[sub_resource type="SystemFont" id="SystemFont_s5ylb"]
+[sub_resource type="SystemFont" id="SystemFont_c4f0b"]
 font_italic = true
 font_weight = 300
 
 [sub_resource type="LabelSettings" id="LabelSettings_wowxs"]
-font = SubResource("SystemFont_s5ylb")
+font = SubResource("SystemFont_c4f0b")
 font_size = 23
 shadow_color = Color(0, 0, 0, 0.85098)
 shadow_offset = Vector2(1.5, 1)
