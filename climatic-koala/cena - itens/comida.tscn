@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://b08up750a3j6c"]
 
 [ext_resource type="Script" uid="uid://bnofhu1hwvf5i" path="res://scripts/comida.gd" id="1_dks2o"]
-[ext_resource type="Texture2D" uid="uid://dkbd8cfl8n3l6" path="res://assets/cenario e itens/Comidas/pão.png" id="1_rj7om"]
-[ext_resource type="Texture2D" uid="uid://jfwnjybtllqo" path="res://assets/cenario e itens/Comidas/pão 2.png" id="2_j8xoq"]
+[ext_resource type="Texture2D" uid="uid://4a5jtw1dx2g3" path="res://assets/cenario e itens/Comidas/pão.png" id="1_rj7om"]
+[ext_resource type="Texture2D" uid="uid://ciuxbp5k7i5uo" path="res://assets/cenario e itens/Comidas/pão 2.png" id="2_j8xoq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3tm4x"]
 atlas = ExtResource("1_rj7om")

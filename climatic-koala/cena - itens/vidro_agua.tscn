@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://eeegcqsxxvnp"]
 
 [ext_resource type="Script" uid="uid://p4rbyw3uq1to" path="res://scripts/vidro_agua.gd" id="1_oqbr8"]
-[ext_resource type="Texture2D" uid="uid://ct0bh0jq3y0gg" path="res://assets/cenario e itens/Comidas/agua.png" id="1_r5rsi"]
-[ext_resource type="Texture2D" uid="uid://2ynjmyt1nmt0" path="res://assets/cenario e itens/Comidas/agua 2.png" id="2_oefeg"]
+[ext_resource type="Texture2D" uid="uid://dq0i2v6daj7u5" path="res://assets/cenario e itens/Comidas/agua.png" id="1_r5rsi"]
+[ext_resource type="Texture2D" uid="uid://dhb6k26o8eag8" path="res://assets/cenario e itens/Comidas/agua 2.png" id="2_oefeg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x1602"]
 atlas = ExtResource("1_r5rsi")

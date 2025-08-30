@@ -7,6 +7,7 @@ var fallback_position = Vector2(0, 0)
 
 
 func _ready():
+	print("Main carregada, local_atual =", GameState.local_atual)
 	# Remove player existente antes de spawnar novo
 	var existing_player = get_tree().get_first_node_in_group("player")
 	if existing_player:
@@ -38,9 +39,12 @@ func _ready():
 			spawn_position = Vector2(1606, 1090)
 			
 		"dentro_progresso":
+			get_tree().call_deferred("change_scene_to_file", GameState.cena_atual)
 			spawn_position = Vector2(GameState.local_mapa)
 		"fora_progresso":
+			get_tree().call_deferred("change_scene_to_file", GameState.cena_atual)
 			spawn_position = Vector2(GameState.local_mapa)
+			
 			
 			
 		_:

@@ -7,7 +7,7 @@ var local_anterior = ""
 var menina : CharacterBody2D = null
 
 var local_mapa: Vector2
-
+var cena_atual = preload("res://cena - cenarios/main.tscn")
 
 var player_scene = preload("res://cena - personagens/menina.tscn")
 var player : Node = null

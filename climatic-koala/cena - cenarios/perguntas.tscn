@@ -1,12 +1,12 @@
 [gd_scene load_steps=18 format=4 uid="uid://cmsva2axx8w0y"]
 
 [ext_resource type="Script" uid="uid://c1o6x1o4eygud" path="res://scripts/caixa_pergunta.gd" id="1_phefd"]
-[ext_resource type="Texture2D" uid="uid://bghowop42aovn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_yynyd"]
-[ext_resource type="Texture2D" uid="uid://dxtvroq42rcks" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="3_48nsq"]
-[ext_resource type="Texture2D" uid="uid://bb8niuyytox40" path="res://assets/GUI/pixel/GUI/GUI_2x.png" id="3_byruw"]
-[ext_resource type="Texture2D" uid="uid://oouvcro7dffq" path="res://assets/GUI/pixel/Buttons/close_button.png" id="5_uulat"]
+[ext_resource type="Texture2D" uid="uid://d36vmg1dxstqt" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_yynyd"]
+[ext_resource type="Texture2D" uid="uid://d0ej3ma7hpk7" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="3_48nsq"]
+[ext_resource type="Texture2D" uid="uid://hhxjjs6rtl88" path="res://assets/GUI/pixel/GUI/GUI_2x.png" id="3_byruw"]
+[ext_resource type="Texture2D" uid="uid://bc8qihf2wxci8" path="res://assets/GUI/pixel/Buttons/close_button.png" id="5_uulat"]
 [ext_resource type="Script" uid="uid://ch8jt2bfxnm3s" path="res://scripts/saida_pergunta.gd" id="5_y52yr"]
-[ext_resource type="Script" uid="uid://dj1gsnup77mdb" path="res://scripts/camera_quiz.gd" id="6_1p0s2"]
+[ext_resource type="Script" uid="uid://b48x58thbaf4j" path="res://scripts/camera_quiz.gd" id="6_1p0s2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hfc8n"]
 texture = ExtResource("3_48nsq")

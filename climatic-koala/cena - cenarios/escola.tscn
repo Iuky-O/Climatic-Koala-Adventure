@@ -1,9 +1,9 @@
 [gd_scene load_steps=38 format=4 uid="uid://dw8ht4voaou68"]
 
-[ext_resource type="Texture2D" uid="uid://cxewvujohfqmn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="1_os7cc"]
-[ext_resource type="Texture2D" uid="uid://bghowop42aovn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_gn5md"]
+[ext_resource type="Texture2D" uid="uid://r54kpk6xp0j4" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="1_os7cc"]
+[ext_resource type="Texture2D" uid="uid://d36vmg1dxstqt" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_gn5md"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_byt1e"]
-[ext_resource type="Texture2D" uid="uid://dqkrj13ar8a1n" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/cadeira.png" id="4_adcs1"]
+[ext_resource type="Texture2D" uid="uid://cq52ke2oh4y4t" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/cadeira.png" id="4_adcs1"]
 [ext_resource type="Script" uid="uid://mctbkdj71nuj" path="res://scripts/porta_escola_saida.gd" id="5_3154y"]
 [ext_resource type="Script" uid="uid://cc5v43hknjj48" path="res://scripts/trigger_dialog_professora.gd" id="6_sy6ly"]
 [ext_resource type="PackedScene" uid="uid://bqwty0hji3coq" path="res://cena - personagens/professora.tscn" id="7_n67mf"]
@@ -2530,7 +2530,7 @@ sources/2 = SubResource("TileSetAtlasSource_422sw")
 size = Vector2(15.3334, 26.6666)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rpbjb"]
-size = Vector2(15.3333, 18.6667)
+size = Vector2(15.3333, 12.6663)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7bdoh"]
 size = Vector2(56, 16.6667)
@@ -3733,27 +3733,27 @@ position = Vector2(345, 152.667)
 shape = SubResource("RectangleShape2D_i3xc7")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="moveis/StaticBody2D"]
-position = Vector2(247.667, 190)
+position = Vector2(248.667, 188)
 shape = SubResource("RectangleShape2D_rpbjb")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="moveis/StaticBody2D"]
-position = Vector2(280, 190.667)
+position = Vector2(280, 188)
 shape = SubResource("RectangleShape2D_rpbjb")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="moveis/StaticBody2D"]
-position = Vector2(248, 254)
+position = Vector2(248, 252)
 shape = SubResource("RectangleShape2D_rpbjb")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="moveis/StaticBody2D"]
-position = Vector2(280, 254)
+position = Vector2(279.333, 252)
 shape = SubResource("RectangleShape2D_rpbjb")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="moveis/StaticBody2D"]
-position = Vector2(312, 254)
+position = Vector2(311.333, 251.333)
 shape = SubResource("RectangleShape2D_rpbjb")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="moveis/StaticBody2D"]
-position = Vector2(344, 254.667)
+position = Vector2(344, 251.667)
 shape = SubResource("RectangleShape2D_rpbjb")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="moveis/StaticBody2D"]
@@ -3769,6 +3769,8 @@ tile_map_data = PackedByteArray("AAAgAA0AAAAMAEIAAAAgAA4AAAAMAEMAAAAlABEAAAANAEs
 tile_set = SubResource("TileSet_8unb7")
 
 [node name="porta_vila" type="Area2D" parent="."]
+monitorable = false
+priority = 2
 script = ExtResource("5_3154y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="porta_vila"]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=25 format=3 uid="uid://bls0vw0qt1tg5"]
 
-[ext_resource type="Texture2D" uid="uid://ra7k4u1neiux" path="res://assets/character/personagens/characters/_srw_character_17-24.png" id="1_v08l3"]
-[ext_resource type="Texture2D" uid="uid://cbkdjw1hs4neg" path="res://assets/character/personagens/characters/_srw_character_9-16.png" id="2_mrxrc"]
-[ext_resource type="Texture2D" uid="uid://bpur643d8dgkk" path="res://assets/character/personagens/characters/_srw_character_1-8.png" id="3_euj58"]
-[ext_resource type="Texture2D" uid="uid://dh77epdgbmibn" path="res://assets/character/personagens/characters/_srw_character_25-32.png" id="4_hx4ho"]
+[ext_resource type="Texture2D" uid="uid://bsguv8anw32vf" path="res://assets/character/personagens/characters/_srw_character_17-24.png" id="1_v08l3"]
+[ext_resource type="Texture2D" uid="uid://n86363khp885" path="res://assets/character/personagens/characters/_srw_character_9-16.png" id="2_mrxrc"]
+[ext_resource type="Texture2D" uid="uid://bv08elmt1gsev" path="res://assets/character/personagens/characters/_srw_character_1-8.png" id="3_euj58"]
+[ext_resource type="Texture2D" uid="uid://c2x3kcklevtdc" path="res://assets/character/personagens/characters/_srw_character_25-32.png" id="4_hx4ho"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x7sue"]
 size = Vector2(36, 43)

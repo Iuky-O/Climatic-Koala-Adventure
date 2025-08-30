@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cdtkkvdabd3u6"]
 
-[ext_resource type="Texture2D" uid="uid://bpur643d8dgkk" path="res://assets/character/personagens/characters/_srw_character_1-8.png" id="2_hnvcj"]
+[ext_resource type="Texture2D" uid="uid://bv08elmt1gsev" path="res://assets/character/personagens/characters/_srw_character_1-8.png" id="2_hnvcj"]
 
 [sub_resource type="GDScript" id="GDScript_kexxp"]
 script/source = "extends CharacterBody2D

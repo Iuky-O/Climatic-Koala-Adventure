@@ -1,14 +1,14 @@
 [gd_scene load_steps=44 format=4 uid="uid://b30j0pnew2k7q"]
 
-[ext_resource type="Texture2D" uid="uid://d05njprvyt8wg" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
-[ext_resource type="Texture2D" uid="uid://cs1x2utksibfk" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_ugakb"]
+[ext_resource type="Texture2D" uid="uid://d36vmg1dxstqt" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
+[ext_resource type="Texture2D" uid="uid://r54kpk6xp0j4" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_ugakb"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_5lul3"]
-[ext_resource type="Texture2D" uid="uid://6nt4y7crewcu" path="res://assets/cenario e itens/Interiores/Interior.png" id="4_t223l"]
-[ext_resource type="Script" path="res://scripts/dialog_box.gd" id="5_hdrq1"]
-[ext_resource type="Script" path="res://scripts/intro.gd" id="6_6i0n7"]
-[ext_resource type="FontFile" uid="uid://b7oouglqlk0v1" path="res://assets/dialog/font/PANICKO.ttf" id="6_jv7tm"]
-[ext_resource type="Texture2D" uid="uid://dv5rt2ym2s4p8" path="res://assets/dialog/img/dialog.png" id="6_k0bbq"]
-[ext_resource type="Texture2D" uid="uid://1hkrs67i5qe2" path="res://assets/dialog/seta50.png" id="8_2rpmy"]
+[ext_resource type="Texture2D" uid="uid://i171h6c1eh03" path="res://assets/cenario e itens/Interiores/Interior.png" id="4_t223l"]
+[ext_resource type="Script" uid="uid://dx04tocw8mxxw" path="res://scripts/dialog_box.gd" id="5_hdrq1"]
+[ext_resource type="Script" uid="uid://cr8ysr4kxrw8u" path="res://scripts/intro.gd" id="6_6i0n7"]
+[ext_resource type="FontFile" uid="uid://dsr143svmda75" path="res://assets/dialog/font/PANICKO.ttf" id="6_jv7tm"]
+[ext_resource type="Texture2D" uid="uid://bmyacl2okjnjk" path="res://assets/dialog/img/dialog.png" id="6_k0bbq"]
+[ext_resource type="Texture2D" uid="uid://dicegratsoia6" path="res://assets/dialog/seta50.png" id="8_2rpmy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s47rh"]
 texture = ExtResource("1_22gtn")

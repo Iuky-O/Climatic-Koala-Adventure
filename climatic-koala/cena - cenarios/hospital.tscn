@@ -1,9 +1,9 @@
 [gd_scene load_steps=37 format=4 uid="uid://bjlidw74ryy0a"]
 
-[ext_resource type="Texture2D" uid="uid://chyqxlwgt6dgf" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/teste1.png" id="1_ex0kl"]
-[ext_resource type="Texture2D" uid="uid://f8ct5myy55ii" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_pt7y3"]
-[ext_resource type="Texture2D" uid="uid://cxewvujohfqmn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="3_630bt"]
-[ext_resource type="Texture2D" uid="uid://g5nhnofyas06" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Interiors_free_32x32.png" id="4_urrnt"]
+[ext_resource type="Texture2D" uid="uid://cx18lq3e7w2w6" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/teste1.png" id="1_ex0kl"]
+[ext_resource type="Texture2D" uid="uid://cifg1h7jbc8ul" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_pt7y3"]
+[ext_resource type="Texture2D" uid="uid://r54kpk6xp0j4" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="3_630bt"]
+[ext_resource type="Texture2D" uid="uid://btnka0gfhwnna" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Interiors_free_32x32.png" id="4_urrnt"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="5_3lqtb"]
 [ext_resource type="Script" uid="uid://bs8k7qjbtjxe2" path="res://scripts/porta_hospital_saida.gd" id="6_3vagv"]
 

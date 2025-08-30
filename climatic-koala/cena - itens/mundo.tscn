@@ -1,10 +1,10 @@
 [gd_scene load_steps=258 format=3 uid="uid://cm70s4n3mkoa"]
 
-[ext_resource type="Texture2D" uid="uid://ckadn2s71m2xv" path="res://assets/mundo/doente.png" id="1_641rg"]
-[ext_resource type="Texture2D" uid="uid://c01u8n2pmfuas" path="res://assets/mundo/10 porcento.png" id="2_neif0"]
-[ext_resource type="Texture2D" uid="uid://byony77tifkor" path="res://assets/mundo/saudável.png" id="3_i3r6y"]
-[ext_resource type="Texture2D" uid="uid://bup70mnew6ro6" path="res://assets/mundo/50 porcento.png" id="4_ysaog"]
-[ext_resource type="Texture2D" uid="uid://b3fwphlwp7cs8" path="res://assets/mundo/80 porcento.png" id="5_ic43e"]
+[ext_resource type="Texture2D" uid="uid://yr0rvu21kwi8" path="res://assets/mundo/doente.png" id="1_641rg"]
+[ext_resource type="Texture2D" uid="uid://bmti1rpvyxqqi" path="res://assets/mundo/10 porcento.png" id="2_neif0"]
+[ext_resource type="Texture2D" uid="uid://bnd2q62mjll64" path="res://assets/mundo/saudável.png" id="3_i3r6y"]
+[ext_resource type="Texture2D" uid="uid://svxjxr0n4a8m" path="res://assets/mundo/50 porcento.png" id="4_ysaog"]
+[ext_resource type="Texture2D" uid="uid://dauqxveksajow" path="res://assets/mundo/80 porcento.png" id="5_ic43e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vhuc1"]
 atlas = ExtResource("1_641rg")

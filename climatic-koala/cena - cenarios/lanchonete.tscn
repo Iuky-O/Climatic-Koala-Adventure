@@ -1,7 +1,7 @@
 [gd_scene load_steps=51 format=4 uid="uid://604hv8v4gshu"]
 
-[ext_resource type="Texture2D" uid="uid://bghowop42aovn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_077kq"]
-[ext_resource type="Texture2D" uid="uid://cxewvujohfqmn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_epum1"]
+[ext_resource type="Texture2D" uid="uid://d36vmg1dxstqt" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_077kq"]
+[ext_resource type="Texture2D" uid="uid://r54kpk6xp0j4" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_epum1"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_bkegs"]
 [ext_resource type="Script" uid="uid://dfvigbkulbtnx" path="res://scripts/porta_lanchonete_saida.gd" id="4_pcwlk"]
 [ext_resource type="Script" uid="uid://cw8xjqsugouw8" path="res://scripts/npc_1.gd" id="5_3e7fh"]
