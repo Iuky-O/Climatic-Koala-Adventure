@@ -1,9 +1,7 @@
-[gd_scene load_steps=30 format=4 uid="uid://b4eco3io2vjak"]
+[gd_scene load_steps=22 format=3 uid="uid://b4eco3io2vjak"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_2ns6y"]
-[ext_resource type="Script" path="res://scripts/entra_progresso.gd" id="3_76hag"]
 [ext_resource type="PackedScene" uid="uid://cfefkvjxwlq" path="res://cena - cenarios/agua.tscn" id="3_jq3xs"]
-[ext_resource type="Texture2D" uid="uid://csav2fj7qumqx" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="4_0cum7"]
 [ext_resource type="PackedScene" uid="uid://eeegcqsxxvnp" path="res://cena - itens/vidro_agua.tscn" id="4_f6ctx"]
 [ext_resource type="PackedScene" uid="uid://d3q30cdo4lo8s" path="res://cena - cenarios/vila.tscn" id="4_n23iv"]
 [ext_resource type="PackedScene" uid="uid://b08up750a3j6c" path="res://cena - itens/comida.tscn" id="5_cfc60"]
@@ -16,121 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://dfkpcnogdo4gb" path="res://cena - personagens/eduardo.tscn" id="11_fir5k"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_nicolas.gd" id="12_wd5ld"]
 [ext_resource type="PackedScene" uid="uid://btif44deo5p8y" path="res://cena - personagens/nicolas.tscn" id="13_t41xd"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dwd5p"]
-texture = ExtResource("4_0cum7")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/0 = 0
-8:0/0 = 0
-9:0/0 = 0
-10:0/0 = 0
-11:0/0 = 0
-12:0/0 = 0
-13:0/0 = 0
-14:0/0 = 0
-15:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-8:1/0 = 0
-9:1/0 = 0
-10:1/0 = 0
-11:1/0 = 0
-12:1/0 = 0
-13:1/0 = 0
-14:1/0 = 0
-15:1/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5etsa"]
-texture = ExtResource("4_0cum7")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/0 = 0
-8:0/0 = 0
-9:0/0 = 0
-10:0/0 = 0
-11:0/0 = 0
-12:0/0 = 0
-13:0/0 = 0
-14:0/0 = 0
-15:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-8:1/0 = 0
-9:1/0 = 0
-10:1/0 = 0
-11:1/0 = 0
-12:1/0 = 0
-13:1/0 = 0
-14:1/0 = 0
-15:1/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_joosv"]
-sources/0 = SubResource("TileSetAtlasSource_dwd5p")
-sources/1 = SubResource("TileSetAtlasSource_5etsa")
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qy6fh"]
-texture = ExtResource("4_0cum7")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/0 = 0
-8:0/0 = 0
-9:0/0 = 0
-10:0/0 = 0
-11:0/0 = 0
-12:0/0 = 0
-13:0/0 = 0
-14:0/0 = 0
-15:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-8:1/0 = 0
-9:1/0 = 0
-10:1/0 = 0
-11:1/0 = 0
-12:1/0 = 0
-13:1/0 = 0
-14:1/0 = 0
-15:1/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_8ocib"]
-sources/0 = SubResource("TileSetAtlasSource_qy6fh")
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ln5ve"]
-size = Vector2(61, 41)
 
 [sub_resource type="LabelSettings" id="LabelSettings_c44fi"]
 font_size = 22
@@ -164,46 +47,7 @@ script = ExtResource("1_2ns6y")
 visible = false
 z_index = 2
 position = Vector2(355, 238)
-
-[node name="fixo_tela" type="CanvasLayer" parent="."]
-
-[node name="total_agua" type="Label" parent="fixo_tela"]
-visible = false
-offset_left = 27.0
-offset_top = 8.0
-offset_right = 67.0
-offset_bottom = 31.0
-
-[node name="total_comida" type="Label" parent="fixo_tela"]
-visible = false
-offset_left = 31.0
-offset_top = 53.0
-offset_right = 71.0
-offset_bottom = 76.0
-
-[node name="total_sem" type="Label" parent="fixo_tela"]
-visible = false
-offset_left = 29.0
-offset_top = 97.0
-offset_right = 69.0
-offset_bottom = 120.0
-
-[node name="entra_progresso" type="Area2D" parent="fixo_tela"]
-script = ExtResource("3_76hag")
-
-[node name="TileMapLayer" type="TileMapLayer" parent="fixo_tela/entra_progresso"]
-scale = Vector2(1.5, 1.5)
-tile_map_data = PackedByteArray("AAAAAAAAAAAEAAAAAAABAAAAAAAFAAAAAAACAAAAAAAGAAAAAAAAAAEAAAAEAAEAAAABAAEAAAAFAAEAAAACAAEAAAAGAAEAAAA=")
-tile_set = SubResource("TileSet_joosv")
-
-[node name="TileMapLayer2" type="TileMapLayer" parent="fixo_tela/entra_progresso"]
-scale = Vector2(1.5, 1.5)
-tile_map_data = PackedByteArray("AAABAAAAAAAPAAEAAAABAAEAAAAOAAEAAAA=")
-tile_set = SubResource("TileSet_8ocib")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="fixo_tela/entra_progresso"]
-position = Vector2(35.5, 23.5)
-shape = SubResource("RectangleShape2D_ln5ve")
+script = null
 
 [node name="vidro_agua" parent="." instance=ExtResource("4_f6ctx")]
 visible = false
@@ -330,7 +174,6 @@ shape = SubResource("RectangleShape2D_7go58")
 position = Vector2(1059, 1153)
 
 [connection signal="body_entered" from="agua" to="agua" method="_on_body_entered"]
-[connection signal="mouse_entered" from="fixo_tela/entra_progresso" to="fixo_tela/entra_progresso" method="_on_mouse_entered"]
 [connection signal="body_entered" from="vidro_agua" to="vidro_agua" method="_on_body_entered"]
 [connection signal="body_entered" from="comida" to="comida" method="_on_body_entered"]
 [connection signal="body_entered" from="comida2" to="comida2" method="_on_body_entered"]
