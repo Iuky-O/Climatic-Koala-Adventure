@@ -48,6 +48,7 @@ func _on_responder(botao):
 
 	if botao.text == resposta_certa:
 		Dados.pontos += 1
+		Dados.progresso_atual += 1 * 25
 		botao.modulate = Color(0, 1, 0) # Verde
 	else:
 		botao.modulate = Color(1, 0, 0) # Vermelho

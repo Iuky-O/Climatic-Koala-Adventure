@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://dp4b2tbohpg7y"]
+
+[ext_resource type="Texture2D" uid="uid://cuddfkveog3v8" path="res://assets/cenario e itens/Vila/bomb.png" id="1_tkgpa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4yhs"]
+atlas = ExtResource("1_tkgpa")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vnkqk"]
+atlas = ExtResource("1_tkgpa")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_av1jw"]
+atlas = ExtResource("1_tkgpa")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ild6c"]
+atlas = ExtResource("1_tkgpa")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifjof"]
+atlas = ExtResource("1_tkgpa")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wrnk"]
+atlas = ExtResource("1_tkgpa")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifruf"]
+atlas = ExtResource("1_tkgpa")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yoonw"]
+atlas = ExtResource("1_tkgpa")
+region = Rect2(256, 256, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xhv1c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4yhs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vnkqk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_av1jw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ild6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifjof")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wrnk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifruf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yoonw")
+}],
+"loop": true,
+"name": &"exlosão",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p81gn"]
+radius = 46.0
+
+[node name="explosão" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xhv1c")
+animation = &"exlosão"
+frame_progress = 0.343784
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_p81gn")

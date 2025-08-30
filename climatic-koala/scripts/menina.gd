@@ -9,10 +9,14 @@ func _ready() -> void:
 	print("Menina spawnou em: ", global_position)
 	print("Local anterior: ", GameState.local_anterior)
 	print("Local atual: ", GameState.local_atual)
+	print("Cena", GameState.cena_atual)
 	print("---------------------------------------")
 
+func _exit_tree():
+	print("Menina removida da árvore")
+	
 func _process(delta: float) -> void:
-	#print("Menina esta em: ", global_position)
+	print("Menina esta em: ", global_position)
 	GameState.local_mapa = Vector2(global_position)
 	#print("global = ",GameState.local_mapa)
 	$fixo_tela/total_agua.text = str("Água = ", Dados.agua)

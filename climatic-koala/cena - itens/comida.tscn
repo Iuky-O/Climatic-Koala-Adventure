@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://b08up750a3j6c"]
 
-[ext_resource type="Script" uid="uid://bnofhu1hwvf5i" path="res://scripts/comida.gd" id="1_dks2o"]
-[ext_resource type="Texture2D" uid="uid://dkbd8cfl8n3l6" path="res://assets/cenario e itens/Comidas/pão.png" id="1_rj7om"]
-[ext_resource type="Texture2D" uid="uid://jfwnjybtllqo" path="res://assets/cenario e itens/Comidas/pão 2.png" id="2_j8xoq"]
+[ext_resource type="Script" path="res://scripts/comida.gd" id="1_dks2o"]
+[ext_resource type="Texture2D" uid="uid://bcb76ytwojhft" path="res://assets/cenario e itens/Comidas/pão.png" id="1_rj7om"]
+[ext_resource type="Texture2D" uid="uid://r6n8uubrjo6l" path="res://assets/cenario e itens/Comidas/pão 2.png" id="2_j8xoq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3tm4x"]
 atlas = ExtResource("1_rj7om")
@@ -42,5 +42,4 @@ frame_progress = 0.0921426
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 0.932006
-scale = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_ewf28")

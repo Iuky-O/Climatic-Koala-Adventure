@@ -31,6 +31,7 @@ extends Node
 ]
 
 @export var pontos = 0
+var progresso_atual: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

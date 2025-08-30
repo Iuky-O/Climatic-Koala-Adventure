@@ -1,19 +1,26 @@
-#main
 extends Node2D
 
-#@onready var player := get_tree().get_first_node_in_group("player")
-
 var fallback_position = Vector2(0, 0)
+var cena_bonita = preload("res://cena - cenarios/vila.tscn")
+var cena_feia = preload("res://cena - cenarios/vila_doente.tscn")
+var cena_escolhida: PackedScene
+var instancia: Node = null
 
+func set_world():
+	var progresso = Dados.progresso_atual
 
-func _ready():
-	print("Main carregada, local_atual =", GameState.local_atual)
-	# Remove player existente antes de spawnar novo
-	var existing_player = get_tree().get_first_node_in_group("player")
-	if existing_player:
-		existing_player.queue_free()
+	# escolhe cena bonita ou feia
+	if progresso >= 50:
+		cena_escolhida = cena_bonita
+	else:
+		cena_escolhida = cena_feia
+
+	# instancia e adiciona à Main
+	instancia = cena_escolhida.instantiate()
+	add_child(instancia)
+	move_child(instancia, 0)
 	
-	# Define spawn point baseado no marcador
+func set_local_map():
 	var spawn_position: Vector2
 	
 	match GameState.local_atual:
@@ -37,22 +44,31 @@ func _ready():
 			spawn_position = Vector2(1019, 546)
 		"fora_hospital":
 			spawn_position = Vector2(1606, 1090)
-			
-		"dentro_progresso":
+		"dentro_progresso", "fora_progresso":
 			get_tree().call_deferred("change_scene_to_file", GameState.cena_atual)
-			spawn_position = Vector2(GameState.local_mapa)
-		"fora_progresso":
-			get_tree().call_deferred("change_scene_to_file", GameState.cena_atual)
-			spawn_position = Vector2(GameState.local_mapa)
-			
-			
-			
+			spawn_position = GameState.local_mapa
 		_:
 			spawn_position = Vector2(371, 300)  # Fallback - nascimento padrão
 	
 	print("Spawning em: ", spawn_position)
 	GameState.spawn_player_at(spawn_position, self)
+	
+func get_girl():
+	print("Main carregada, local_atual =", GameState.local_atual)
 
+	GameState.clear_player_reference()
+	
+	var existing_players = get_tree().get_nodes_in_group("player")
+	for existing_player in existing_players:
+		existing_player.queue_free()
+	
+func _ready():
+	
+	set_world()
+	
+	get_girl()
+		
+	set_local_map()
 
 func _process(delta: float) -> void:
 	pass

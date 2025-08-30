@@ -1,0 +1,95 @@
+[gd_scene load_steps=14 format=3 uid="uid://ggh1iv88yvkg"]
+
+[ext_resource type="Texture2D" uid="uid://dx2c1kf3geer8" path="res://assets/cenario e itens/Vila/flame-lit-ezgif.com-gif-to-sprite-converter.png" id="1_qdxuk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hm3ht"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34ns5"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d221w"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_atiub"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(600, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5g7l3"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(800, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvl0a"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(0, 200, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dkap"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(200, 200, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpxpo"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(400, 200, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pvsh"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(600, 200, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aq2pb"]
+atlas = ExtResource("1_qdxuk")
+region = Rect2(800, 200, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5toa7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hm3ht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_34ns5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d221w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_atiub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5g7l3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvl0a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dkap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpxpo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0pvsh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aq2pb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2vcxq"]
+size = Vector2(162, 178.5)
+
+[node name="fogo" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5toa7")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7, 12.25)
+shape = SubResource("RectangleShape2D_2vcxq")
