@@ -1,10 +1,10 @@
 [gd_scene load_steps=258 format=3 uid="uid://cm70s4n3mkoa"]
 
-[ext_resource type="Texture2D" uid="uid://ckadn2s71m2xv" path="res://assets/mundo/doente.png" id="1_641rg"]
-[ext_resource type="Texture2D" uid="uid://c01u8n2pmfuas" path="res://assets/mundo/10 porcento.png" id="2_neif0"]
-[ext_resource type="Texture2D" uid="uid://byony77tifkor" path="res://assets/mundo/saudável.png" id="3_i3r6y"]
-[ext_resource type="Texture2D" uid="uid://bup70mnew6ro6" path="res://assets/mundo/50 porcento.png" id="4_ysaog"]
-[ext_resource type="Texture2D" uid="uid://b3fwphlwp7cs8" path="res://assets/mundo/80 porcento.png" id="5_ic43e"]
+[ext_resource type="Texture2D" uid="uid://qlxnyd1i3m5h" path="res://assets/mundo/doente.png" id="1_641rg"]
+[ext_resource type="Texture2D" uid="uid://dyvnu4u8rgo2i" path="res://assets/mundo/10 porcento.png" id="2_neif0"]
+[ext_resource type="Texture2D" uid="uid://trrv2a1ct6c3" path="res://assets/mundo/saudável.png" id="3_i3r6y"]
+[ext_resource type="Texture2D" uid="uid://cftbw2wcg706v" path="res://assets/mundo/50 porcento.png" id="4_ysaog"]
+[ext_resource type="Texture2D" uid="uid://4tx7v7u0mlel" path="res://assets/mundo/80 porcento.png" id="5_ic43e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vhuc1"]
 atlas = ExtResource("1_641rg")
@@ -1791,7 +1791,8 @@ radius = 49.0102
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cqn5d")
-animation = &"0"
+animation = &"100"
+autoplay = "100"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 0)

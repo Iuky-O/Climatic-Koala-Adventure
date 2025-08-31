@@ -1,0 +1,127 @@
+[gd_scene load_steps=14 format=3 uid="uid://cssylas5piejf"]
+
+[ext_resource type="Script" path="res://scripts/quiz_screen.gd" id="1_i2cgy"]
+[ext_resource type="Theme" uid="uid://g0x7t2dfn4rk" path="res://new_theme.tres" id="2_fl5pk"]
+[ext_resource type="Texture2D" uid="uid://bbtql5hnssnpu" path="res://assets/GUI/bg/summer8/Summer8.png" id="2_fwxco"]
+[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="3_lv2mq"]
+[ext_resource type="Script" path="res://scripts/sai_pergunta.gd" id="4_mnao2"]
+[ext_resource type="Texture2D" uid="uid://cidvhv1qajun8" path="res://assets/GUI/pixel/Buttons/close_button_2.png" id="5_y7fyr"]
+[ext_resource type="Script" path="res://scripts/barra_progresso.gd" id="7_ttte3"]
+
+[sub_resource type="Theme" id="Theme_4fmh1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vh7n2"]
+bg_color = Color(0.470803, 0.55835, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7oqu"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0, 0, 0, 0.545098)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="Theme" id="Theme_jqq5j"]
+RichTextLabel/font_sizes/bold_font_size = 24
+RichTextLabel/font_sizes/normal_font_size = 27
+RichTextLabel/fonts/normal_font = ExtResource("3_lv2mq")
+RichTextLabel/styles/background = SubResource("StyleBoxFlat_vh7n2")
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_v7oqu")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cbt8l"]
+border_color = Color(0.172549, 0.172549, 0.172549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qv13"]
+bg_color = Color(1, 0.843137, 0, 1)
+
+[node name="quiz_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i2cgy")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fwxco")
+expand_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+z_index = -4
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+z_index = 4
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_4fmh1")
+
+[node name="LabelPergunta" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_jqq5j")
+text = "sjsndjsjndjsnjdnsjdn"
+fit_content = true
+
+[node name="Button 1" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_fl5pk")
+text = "1"
+
+[node name="Button 2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_fl5pk")
+text = "2"
+
+[node name="Button 3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_fl5pk")
+text = "3"
+
+[node name="Sair_pergunta" type="Button" parent="MarginContainer"]
+z_index = 4
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_icons/icon = ExtResource("5_y7fyr")
+flat = true
+script = ExtResource("4_mnao2")
+caixa_pergunta = NodePath("../HBoxContainer")
+
+[node name="Barra_progresso" type="ProgressBar" parent="."]
+z_index = 6
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.02
+offset_left = -545.0
+offset_top = 22.0
+offset_right = 540.0
+offset_bottom = 22.04
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_cbt8l")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2qv13")
+show_percentage = false
+script = ExtResource("7_ttte3")

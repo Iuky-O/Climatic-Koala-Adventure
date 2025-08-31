@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=4 uid="uid://doy50dy86cg8f"]
 
 [ext_resource type="Script" path="res://scripts/caixa_pergunta.gd" id="1_phefd"]
-[ext_resource type="Texture2D" uid="uid://dxtvroq42rcks" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="3_48nsq"]
-[ext_resource type="Texture2D" uid="uid://bb8niuyytox40" path="res://assets/GUI/pixel/GUI/GUI_2x.png" id="3_byruw"]
-[ext_resource type="Texture2D" uid="uid://oouvcro7dffq" path="res://assets/GUI/pixel/Buttons/close_button.png" id="4_801ml"]
+[ext_resource type="Texture2D" uid="uid://dam7k2gvspmd1" path="res://assets/GUI/pixel/Buttons/buttons_2x.png" id="3_48nsq"]
+[ext_resource type="Texture2D" uid="uid://f0i1elvliitl" path="res://assets/GUI/pixel/GUI/GUI_2x.png" id="3_byruw"]
+[ext_resource type="Texture2D" uid="uid://bkmqbvjnbecjs" path="res://assets/GUI/pixel/Buttons/close_button.png" id="4_801ml"]
 [ext_resource type="Script" path="res://scripts/sai_pergunta.gd" id="4_rnnlp"]
 [ext_resource type="Script" path="res://scripts/camera_quiz.gd" id="6_1p0s2"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hfc8n"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_466ul"]
 texture = ExtResource("3_48nsq")
 0:0/0 = 0
 1:0/0 = 0
@@ -43,12 +43,12 @@ texture = ExtResource("3_48nsq")
 15:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_52x0k"]
-sources/0 = SubResource("TileSetAtlasSource_hfc8n")
+sources/0 = SubResource("TileSetAtlasSource_466ul")
 
 [sub_resource type="LabelSettings" id="LabelSettings_vm6fm"]
 font_size = 25
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6246u"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ub3m0"]
 texture = ExtResource("3_byruw")
 0:0/0 = 0
 1:0/0 = 0
@@ -255,7 +255,7 @@ texture = ExtResource("3_byruw")
 7:13/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_guv8v"]
-sources/0 = SubResource("TileSetAtlasSource_6246u")
+sources/0 = SubResource("TileSetAtlasSource_ub3m0")
 
 [node name="perguntas" type="TileMapLayer"]
 

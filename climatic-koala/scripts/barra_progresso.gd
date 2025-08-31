@@ -15,6 +15,10 @@ var nova_xp: int = 25
 func _ready():
 	progresso_mudado.connect(progress_update)
 	progress_update()
+	
+func _process(delta: float) -> void:
+	progresso_mudado.connect(progress_update)
+	progress_update()
 
 
 func progress_update():
