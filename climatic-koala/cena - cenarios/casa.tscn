@@ -1,9 +1,14 @@
-[gd_scene load_steps=35 format=4 uid="uid://b30j0pnew2k7q"]
+[gd_scene load_steps=45 format=4 uid="uid://b30j0pnew2k7q"]
 
-[ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
-[ext_resource type="Texture2D" uid="uid://dj7f0efyfdrux" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_ugakb"]
+[ext_resource type="Texture2D" uid="uid://d05njprvyt8wg" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
+[ext_resource type="Texture2D" uid="uid://cs1x2utksibfk" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_ugakb"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_5lul3"]
-[ext_resource type="Texture2D" uid="uid://dqaiupb1o5v55" path="res://assets/cenario e itens/Interiores/Interior.png" id="4_t223l"]
+[ext_resource type="Texture2D" uid="uid://6nt4y7crewcu" path="res://assets/cenario e itens/Interiores/Interior.png" id="4_t223l"]
+[ext_resource type="Script" path="res://scripts/dialog_box.gd" id="5_dcedu"]
+[ext_resource type="Script" path="res://scripts/intro.gd" id="6_ecqc5"]
+[ext_resource type="FontFile" uid="uid://b7oouglqlk0v1" path="res://assets/dialog/font/PANICKO.ttf" id="6_isy2d"]
+[ext_resource type="Texture2D" uid="uid://dv5rt2ym2s4p8" path="res://assets/dialog/img/dialog.png" id="6_rh642"]
+[ext_resource type="Texture2D" uid="uid://dv4sbijqyhc1p" path="res://assets/dialog/img/seta50.png" id="8_2u84s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s47rh"]
 texture = ExtResource("1_22gtn")
@@ -4864,6 +4869,29 @@ texture = ExtResource("2_ugakb")
 [sub_resource type="TileSet" id="TileSet_qer0e"]
 sources/0 = SubResource("TileSetAtlasSource_yw8wn")
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6kmpl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1mr2v"]
+font = ExtResource("6_isy2d")
+font_size = 25
+outline_size = 5
+outline_color = Color(0.099986, 0.099986, 0.099986, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_s5ylb"]
+font_italic = true
+font_weight = 300
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_biiuy"]
+font = SubResource("SystemFont_s5ylb")
+font_size = 23
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.85098)
+shadow_offset = Vector2(1.5, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dy7do"]
+size = Vector2(222.625, 72)
+
 [node name="casa" type="TileMapLayer"]
 
 [node name="chao e paredes" type="TileMapLayer" parent="."]
@@ -4985,4 +5013,85 @@ tile_map_data = PackedByteArray("AAApABoAAAAKAC8AAAAqABoAAAALAC8AAAAPAAcAAAALAC8
 tile_set = SubResource("TileSet_qer0e")
 
 [node name="menina" parent="." instance=ExtResource("3_5lul3")]
-position = Vector2(255, 317)
+position = Vector2(593, 533)
+
+[node name="DialogBox" type="CanvasLayer" parent="."]
+visible = false
+follow_viewport_scale = 0.001
+script = ExtResource("5_dcedu")
+
+[node name="Dialog" type="Sprite2D" parent="DialogBox"]
+position = Vector2(572, 511)
+scale = Vector2(0.66453, 0.600671)
+texture = ExtResource("6_rh642")
+
+[node name="Panel" type="Panel" parent="DialogBox"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 312.0
+offset_top = -183.0
+offset_right = -350.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_6kmpl")
+
+[node name="Label" type="Label" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -243.5
+offset_right = 243.5
+offset_bottom = 99.0
+grow_horizontal = 2
+text = "oi
+"
+label_settings = SubResource("LabelSettings_1mr2v")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.978
+anchor_top = 0.08
+anchor_right = 1.096
+anchor_bottom = 0.747
+offset_left = -6.22003
+offset_top = -0.960001
+offset_right = -6.04004
+offset_bottom = -0.989006
+grow_horizontal = 0
+grow_vertical = 2
+icon = ExtResource("8_2u84s")
+flat = true
+
+[node name="Label2" type="Label" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -69.5
+offset_right = 86.0
+offset_bottom = -37.5
+grow_vertical = 2
+text = "nome"
+label_settings = SubResource("LabelSettings_biiuy")
+horizontal_alignment = 1
+uppercase = true
+
+[node name="sala" type="Area2D" parent="."]
+monitorable = false
+script = ExtResource("6_ecqc5")
+
+[node name="CollisionShapeSala" type="CollisionShape2D" parent="sala"]
+position = Vector2(367.313, 284)
+shape = SubResource("RectangleShape2D_dy7do")
+
+[connection signal="body_entered" from="sala" to="sala" method="_on_body_entered"]
+[connection signal="body_exited" from="sala" to="sala" method="_on_body_exited"]
