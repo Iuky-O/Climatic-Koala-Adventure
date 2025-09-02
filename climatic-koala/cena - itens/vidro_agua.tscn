@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://eeegcqsxxvnp"]
+[gd_scene load_steps=9 format=3 uid="uid://eeegcqsxxvnp"]
 
-[ext_resource type="Script" uid="uid://p4rbyw3uq1to" path="res://scripts/vidro_agua.gd" id="1_oqbr8"]
+[ext_resource type="Script" path="res://scripts/vidro_agua.gd" id="1_oqbr8"]
 [ext_resource type="Texture2D" uid="uid://ct0bh0jq3y0gg" path="res://assets/cenario e itens/Comidas/agua.png" id="1_r5rsi"]
 [ext_resource type="Texture2D" uid="uid://2ynjmyt1nmt0" path="res://assets/cenario e itens/Comidas/agua 2.png" id="2_oefeg"]
+[ext_resource type="Texture2D" uid="uid://f6otnur4j2id" path="res://assets/cenario e itens/Comidas/garrafa_agua.png" id="4_4ecci"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x1602"]
 atlas = ExtResource("1_r5rsi")
@@ -20,9 +21,20 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qbp6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4ecci")
 }],
 "loop": true,
 "name": &"1",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_4ecci")
+}],
+"loop": true,
+"name": &"garrafa_agua",
 "speed": 3.0
 }]
 
@@ -31,14 +43,14 @@ radius = 6.0
 height = 21.5855
 
 [node name="vidro_agua" type="Area2D"]
+scale = Vector2(0.03, 0.03)
 monitorable = false
 script = ExtResource("1_oqbr8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e7n0l")
-animation = &"1"
-autoplay = "1"
-frame_progress = 0.558558
+animation = &"garrafa_agua"
+autoplay = "garrafa_agua"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 0)
