@@ -22,8 +22,8 @@ func _exit_tree():
 	
 func _process(delta: float) -> void:
 	GameState.local_mapa = Vector2(global_position)
-	$fixo_tela/total_agua.text = str("Água = ", Dados.agua)
-	$fixo_tela/total_comida.text = str("Comida = ", Dados.comida)
+	$fixo_tela/total_agua.text = str(Dados.agua)
+	$fixo_tela/total_comida.text = str(Dados.comida)
 	print("Menina esta em: ", global_position)
 	#print("global = ",GameState.local_mapa)
 

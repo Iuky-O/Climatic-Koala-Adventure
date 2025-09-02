@@ -1,9 +1,11 @@
-[gd_scene load_steps=30 format=3 uid="uid://dvinqlm3mwmwj"]
+[gd_scene load_steps=32 format=3 uid="uid://dvinqlm3mwmwj"]
 
 [ext_resource type="Script" path="res://scripts/menina.gd" id="1_k0ewq"]
-[ext_resource type="Texture2D" uid="uid://db30eg1qrodw6" path="res://assets/character/walk and idle.png" id="2_c718o"]
-[ext_resource type="Texture2D" uid="uid://dbvxmkplo8jxk" path="res://assets/GUI/pixel/Buttons/quest_button.png" id="3_kni0x"]
+[ext_resource type="Texture2D" uid="uid://dkr0rn5nb7iq3" path="res://assets/character/walk and idle.png" id="2_c718o"]
+[ext_resource type="Texture2D" uid="uid://f6otnur4j2id" path="res://assets/cenario e itens/Comidas/garrafa_agua.png" id="3_ceofa"]
+[ext_resource type="Texture2D" uid="uid://i84ambqp4hlv" path="res://assets/GUI/pixel/Buttons/quest_button.png" id="3_kni0x"]
 [ext_resource type="Script" path="res://scripts/entra_pergunta.gd" id="3_yom3w"]
+[ext_resource type="Texture2D" uid="uid://cyicxkg4h1mb0" path="res://assets/cenario e itens/Comidas/fruta_maca.png" id="4_3266a"]
 [ext_resource type="Script" path="res://scripts/barra_progresso.gd" id="4_y7uff"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bgnub"]
@@ -194,17 +196,32 @@ zoom = Vector2(2, 2)
 
 [node name="fixo_tela" type="CanvasLayer" parent="."]
 
+[node name="VBoxContainer" type="VBoxContainer" parent="fixo_tela"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 1034.0
+offset_bottom = 3086.0
+scale = Vector2(0.05, 0.05)
+
+[node name="agua" type="TextureRect" parent="fixo_tela/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_ceofa")
+
+[node name="maca" type="TextureRect" parent="fixo_tela/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_3266a")
+
 [node name="total_agua" type="Label" parent="fixo_tela"]
-offset_left = 27.0
-offset_top = 8.0
-offset_right = 67.0
-offset_bottom = 31.0
+offset_left = 54.0
+offset_top = 54.0
+offset_right = 94.0
+offset_bottom = 77.0
 
 [node name="total_comida" type="Label" parent="fixo_tela"]
-offset_left = 31.0
-offset_top = 53.0
-offset_right = 71.0
-offset_bottom = 76.0
+offset_left = 58.0
+offset_top = 125.0
+offset_right = 98.0
+offset_bottom = 148.0
 
 [node name="Entra_pergunta" type="Button" parent="fixo_tela"]
 anchors_preset = 1
