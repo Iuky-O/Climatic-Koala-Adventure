@@ -4,7 +4,7 @@ extends Area2D
 
 var dialog_lines_1 = [
 	"O dia está lindo para um encontro.",
-	"Espero que o mundo não acabe agora.",
+	"Espero que o mundo não acabe agora...",
 	"Ela vai chegar logo, certo?",
 	"Tchau!"
 ]

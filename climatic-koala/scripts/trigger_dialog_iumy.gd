@@ -4,14 +4,14 @@ extends Area2D
 
 var dialog_lines_1 = [
 	"Você já imaginou como seria ter poderes?",
-	"Estou na dúvida se prefiro voar ou teletransportar.",
+	"Estou na dúvida se prefiro voar ou teletransportar...",
 	"Estou feliz pelo clima estar mais fresco hoje em dia, obrigada!.",
 	"Vai na sombra."
 ]
 
 var dialog_lines_2 = [
 	"Estou com tanto calor!",
-	"Aqui perto do rio é o lugar mais refrescante.",
+	"Aqui perto do rio é o lugar mais refrescante...",
 	"Hum, estou achando que esse lago tem menos peixes hoje.",
 	"Vai na sombra."
 ]

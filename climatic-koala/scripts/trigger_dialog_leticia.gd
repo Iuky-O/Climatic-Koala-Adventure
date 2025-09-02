@@ -4,7 +4,7 @@ extends Area2D
 
 var dialog_lines_1 = [	
 	"Estou tão feliz!",
-	"O clima melhorou bastante graças a você.",
+	"O clima melhorou bastante graças a você...",
 	"Mas não esqueça, isso é apenas o começo.",
 	"Não podemos parar nunca.",
 	"Obrigada, até a próxima!",
@@ -12,7 +12,7 @@ var dialog_lines_1 = [
 
 var dialog_lines_2 = [
 	"Oi! Você parece novo aqui.",
-	"Cuidado por ai, aqui é mais perigoso do que parece.",
+	"Cuidado por ai, aqui é mais perigoso do que parece...",
 	"Se bem que somos os mais perigosos aqui.",
 	"Boa sorte na sua jornada!",
 ]

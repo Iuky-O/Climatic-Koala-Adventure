@@ -10,7 +10,7 @@ var dialog_lines_1 = [
 
 var dialog_lines_2 = [	
 	"Você está muito perto.",
-	"O clima está cada dia mais estranho.",
+	"O clima está cada dia mais estranho...",
 	"Os animais sumiram ou morreram... isso é desesperador.",
 	"Hum, perto demias. Saia ou vai se ver com a minha namorada.",
 ]

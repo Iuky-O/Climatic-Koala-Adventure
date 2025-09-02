@@ -55,6 +55,8 @@
 	#GameState.ui_active = false  # Libera movimento
 extends CanvasLayer
 
+signal dialog_finished
+
 var dialog_lines = []
 var current_line = 0
 var personagem_name = ""
@@ -82,7 +84,7 @@ func start_dialog(lines: Array, nome: String):
 	current_line = 0
 	personagem_name = nome
 	show_dialog()
-	# Bloqueia movimento quando o diálogo começa
+	# bloqueia movimento quando o diálogo começa
 	GameState.ui_active = true
 
 func show_dialog():
@@ -95,8 +97,10 @@ func hide_dialog():
 	current_line = 0
 	dialog_lines = []
 	personagem_name = ""
-	# Libera movimento quando o diálogo termina
+	# libera movimento quando o diálogo termina
 	GameState.ui_active = false
+	
+	emit_signal("dialog_finished")
 
 func _on_pass_pressed():
 	if current_line < dialog_lines.size() - 1:

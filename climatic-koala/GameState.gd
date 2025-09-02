@@ -4,6 +4,8 @@ var local_atual = "fora_escola"
 var local_anterior = ""
 
 var ui_active = false
+var noticiario_mostrado: bool = false
+var fuga_mostrado: bool = false
 
 var menina : CharacterBody2D = null
 var local_mapa: Vector2

@@ -10,10 +10,20 @@ extends Area2D
 
 @export var nome = "Noticiario"
 
+func _ready():
+	if GameState.noticiario_mostrado:
+		set_monitoring(false)
+		set_monitorable(false)
+
 func _on_body_entered(body):
-	if body.is_in_group("player"):
+	if body.is_in_group("player") and not GameState.noticiario_mostrado:
 		var dialog_box = get_parent().get_node("DialogBox")
 		dialog_box.start_dialog(dialog_lines, nome)
+		GameState.noticiario_mostrado = true
+
+		# Desativa a área para não disparar mais
+		set_monitoring(false)
+		set_monitorable(false)
 
 func _on_body_exited(body):
 	if body.is_in_group("player"):
