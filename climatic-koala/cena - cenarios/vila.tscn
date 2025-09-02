@@ -1834,7 +1834,7 @@ sources/12 = SubResource("TileSetAtlasSource_dd75g")
 sources/13 = SubResource("TileSetAtlasSource_xtdbp")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys3jj"]
-size = Vector2(100, 75.3334)
+size = Vector2(100, 70.3334)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rfxij"]
 texture = ExtResource("5_usw6m")
@@ -5730,7 +5730,7 @@ size = Vector2(22, 26)
 size = Vector2(24, 25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dvnaj"]
-size = Vector2(24, 27)
+size = Vector2(24, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xhqmo"]
 size = Vector2(25, 27)
@@ -5864,11 +5864,11 @@ tile_set = SubResource("TileSet_0uxjh")
 [node name="StaticBody2D" type="StaticBody2D" parent="pracinha e predios"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pracinha e predios/StaticBody2D"]
-position = Vector2(166.667, 699.667)
+position = Vector2(166, 698)
 shape = SubResource("RectangleShape2D_ys3jj")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="pracinha e predios/StaticBody2D"]
-position = Vector2(311.333, 700)
+position = Vector2(311.333, 697.5)
 shape = SubResource("RectangleShape2D_ys3jj")
 
 [node name="rua" type="TileMapLayer" parent="."]
@@ -6144,7 +6144,7 @@ position = Vector2(986, 430)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC - Eduardo"]
 z_index = 2
-position = Vector2(986, 431.5)
+position = Vector2(986, 429.5)
 shape = SubResource("RectangleShape2D_dvnaj")
 
 [node name="NPC - Nicolas" type="Area2D" parent="."]

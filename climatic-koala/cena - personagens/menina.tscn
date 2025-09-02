@@ -165,7 +165,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vysw7"]
-size = Vector2(13, 14.3333)
+size = Vector2(13, 12.6667)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d02u4"]
 border_color = Color(0.172549, 0.172549, 0.172549, 1)
@@ -186,7 +186,7 @@ frame = 5
 frame_progress = 0.614898
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.5, 3.83333)
+position = Vector2(1.5, 3.66667)
 shape = SubResource("RectangleShape2D_vysw7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
