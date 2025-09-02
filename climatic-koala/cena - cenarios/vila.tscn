@@ -1,4 +1,4 @@
-[gd_scene load_steps=126 format=4 uid="uid://d3q30cdo4lo8s"]
+[gd_scene load_steps=127 format=4 uid="uid://d3q30cdo4lo8s"]
 
 [ext_resource type="Texture2D" uid="uid://cgb17bfm7qvjy" path="res://assets/cenario e itens/summer tilemap.png" id="1_w1p7b"]
 [ext_resource type="Texture2D" uid="uid://c78x7w086dvo5" path="res://assets/cenario e itens/summer and spring items.png" id="2_2jrnr"]
@@ -22,6 +22,7 @@
 [ext_resource type="Script" path="res://scripts/porta_mercearia_entra.gd" id="20_feq1s"]
 [ext_resource type="Script" path="res://scripts/porta_hospital_entra.gd" id="21_c3gup"]
 [ext_resource type="Script" path="res://scripts/dialog_box.gd" id="22_o2flt"]
+[ext_resource type="Texture2D" uid="uid://qb2oblerr5r4" path="res://assets/GUI/pixel/Buttons/pass.png" id="23_0bp3s"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_iumy.gd" id="23_jhsnu"]
 [ext_resource type="PackedScene" uid="uid://cdtkkvdabd3u6" path="res://cena - personagens/iumy.tscn" id="24_32rvc"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_leticia.gd" id="25_iton0"]
@@ -6078,21 +6079,6 @@ text = "oi
 label_settings = SubResource("LabelSettings_bsyi5")
 horizontal_alignment = 1
 
-[node name="pass" type="Button" parent="DialogBox/Panel"]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -76.0
-offset_top = -19.0
-offset_right = -11.0
-offset_bottom = 21.0
-grow_horizontal = 0
-grow_vertical = 2
-text = ">>>"
-
 [node name="Label2" type="Label" parent="DialogBox/Panel"]
 layout_mode = 1
 anchors_preset = 4
@@ -6107,6 +6093,24 @@ text = "nome"
 label_settings = SubResource("LabelSettings_doumj")
 horizontal_alignment = 1
 uppercase = true
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -25.0
+offset_right = 16.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = 1.5708
+scale = Vector2(1.9, 1.9)
+icon = ExtResource("23_0bp3s")
+flat = true
 
 [node name="NPC - Iumy" type="Area2D" parent="."]
 z_index = 6

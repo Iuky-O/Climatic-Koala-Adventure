@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://dw8ht4voaou68"]
+[gd_scene load_steps=39 format=4 uid="uid://dw8ht4voaou68"]
 
 [ext_resource type="Texture2D" uid="uid://dj7f0efyfdrux" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="1_os7cc"]
 [ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_gn5md"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bqwty0hji3coq" path="res://cena - personagens/professora.tscn" id="7_n67mf"]
 [ext_resource type="Script" path="res://scripts/dialog_box.gd" id="8_2jhcm"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_aluno.gd" id="9_j7iqh"]
+[ext_resource type="Texture2D" uid="uid://qb2oblerr5r4" path="res://assets/GUI/pixel/Buttons/pass.png" id="9_srl5r"]
 [ext_resource type="PackedScene" uid="uid://bof8fksqip0px" path="res://cena - personagens/alunos.tscn" id="10_drxau"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_aluno2.gd" id="11_18x5p"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_aluno3.gd" id="12_la1eq"]
@@ -3819,21 +3820,6 @@ text = "oi
 label_settings = SubResource("LabelSettings_hkpt4")
 horizontal_alignment = 1
 
-[node name="pass" type="Button" parent="DialogBox/Panel"]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -76.0
-offset_top = -19.0
-offset_right = -11.0
-offset_bottom = 21.0
-grow_horizontal = 0
-grow_vertical = 2
-text = ">>>"
-
 [node name="Label2" type="Label" parent="DialogBox/Panel"]
 layout_mode = 1
 anchors_preset = 4
@@ -3848,6 +3834,24 @@ text = "nome"
 label_settings = SubResource("LabelSettings_uwt5r")
 horizontal_alignment = 1
 uppercase = true
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -25.0
+offset_right = 16.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = 1.5708
+scale = Vector2(1.9, 1.9)
+icon = ExtResource("9_srl5r")
+flat = true
 
 [node name="NPC - Aluno 1" type="Area2D" parent="."]
 script = ExtResource("9_j7iqh")

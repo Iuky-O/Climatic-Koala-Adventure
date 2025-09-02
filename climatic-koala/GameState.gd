@@ -3,6 +3,8 @@ extends Node
 var local_atual = "fora_escola"
 var local_anterior = ""
 
+var ui_active = false
+
 var menina : CharacterBody2D = null
 var local_mapa: Vector2
 

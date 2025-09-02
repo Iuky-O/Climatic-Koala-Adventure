@@ -1,4 +1,4 @@
-[gd_scene load_steps=133 format=4 uid="uid://gx3bdmrvds1n"]
+[gd_scene load_steps=134 format=4 uid="uid://gx3bdmrvds1n"]
 
 [ext_resource type="Texture2D" uid="uid://c78x7w086dvo5" path="res://assets/cenario e itens/summer and spring items.png" id="1_meaue"]
 [ext_resource type="Texture2D" uid="uid://cgb17bfm7qvjy" path="res://assets/cenario e itens/summer tilemap.png" id="2_5pawj"]
@@ -28,6 +28,7 @@
 [ext_resource type="Script" path="res://scripts/trigger_dialog_iumy.gd" id="25_0duur"]
 [ext_resource type="Script" path="res://scripts/dialog_box.gd" id="25_epfio"]
 [ext_resource type="PackedScene" uid="uid://cdtkkvdabd3u6" path="res://cena - personagens/iumy.tscn" id="26_htxe0"]
+[ext_resource type="Texture2D" uid="uid://qb2oblerr5r4" path="res://assets/GUI/pixel/Buttons/pass.png" id="27_46vkm"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_leticia.gd" id="28_d7g05"]
 [ext_resource type="PackedScene" uid="uid://c1hpturoaeqh8" path="res://cena - personagens/leticia.tscn" id="29_7s4uj"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_eduardo.gd" id="30_e8kmc"]
@@ -6382,21 +6383,6 @@ text = "oi
 label_settings = SubResource("LabelSettings_sispy")
 horizontal_alignment = 1
 
-[node name="pass" type="Button" parent="DialogBox/Panel"]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -76.0
-offset_top = -19.0
-offset_right = -11.0
-offset_bottom = 21.0
-grow_horizontal = 0
-grow_vertical = 2
-text = ">>>"
-
 [node name="Label2" type="Label" parent="DialogBox/Panel"]
 layout_mode = 1
 anchors_preset = 4
@@ -6411,6 +6397,24 @@ text = "nome"
 label_settings = SubResource("LabelSettings_kwwh7")
 horizontal_alignment = 1
 uppercase = true
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -25.0
+offset_right = 16.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = 1.5708
+scale = Vector2(1.9, 1.9)
+icon = ExtResource("27_46vkm")
+flat = true
 
 [node name="NPC - Iumy" type="Area2D" parent="."]
 z_index = 5

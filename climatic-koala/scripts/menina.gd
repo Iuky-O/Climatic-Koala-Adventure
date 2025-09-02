@@ -28,14 +28,31 @@ func _process(delta: float) -> void:
 	#print("global = ",GameState.local_mapa)
 
 func _input(event):
+	if GameState.ui_active:
+		touch_active = false
+		return
+	
 	if event is InputEventScreenTouch or event is InputEventMouseButton:
 		if event.pressed:
+			var dialog_layer = get_node_or_null("/root/Node2D/CanvasLayer")
+			if dialog_layer and dialog_layer.visible:
+				touch_active = false
+				return
 			touch_target = event.position
 			touch_active = true
 		else:
 			touch_active = false
 
+
 func _physics_process(delta: float) -> void:
+	
+	if GameState.ui_active:
+		velocity = Vector2.ZERO
+		touch_active = false
+		$AnimatedSprite2D.play("parada")
+		move_and_slide()
+		return
+
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += ProjectSettings.get_setting("physics/2d/default_gravity") * delta

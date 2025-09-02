@@ -1,15 +1,16 @@
-[gd_scene load_steps=51 format=4 uid="uid://604hv8v4gshu"]
+[gd_scene load_steps=52 format=4 uid="uid://604hv8v4gshu"]
 
-[ext_resource type="Texture2D" uid="uid://bghowop42aovn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_077kq"]
-[ext_resource type="Texture2D" uid="uid://cxewvujohfqmn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_epum1"]
+[ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_077kq"]
+[ext_resource type="Texture2D" uid="uid://dj7f0efyfdrux" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_epum1"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="3_bkegs"]
-[ext_resource type="Script" uid="uid://dfvigbkulbtnx" path="res://scripts/porta_lanchonete_saida.gd" id="4_pcwlk"]
-[ext_resource type="Script" uid="uid://cw8xjqsugouw8" path="res://scripts/npc_1.gd" id="5_3e7fh"]
+[ext_resource type="Script" path="res://scripts/porta_lanchonete_saida.gd" id="4_pcwlk"]
+[ext_resource type="Script" path="res://scripts/npc_1.gd" id="5_3e7fh"]
 [ext_resource type="PackedScene" uid="uid://bls0vw0qt1tg5" path="res://cena - personagens/npcs.tscn" id="5_42wtp"]
-[ext_resource type="Script" uid="uid://ov3o1a6xui8e" path="res://scripts/npc_2.gd" id="7_2lenx"]
-[ext_resource type="Script" uid="uid://dt0e5hin7k7yn" path="res://scripts/npc_3.gd" id="8_bdqck"]
-[ext_resource type="Script" uid="uid://bji34mgbhhcbx" path="res://scripts/npc_4.gd" id="9_wybuv"]
-[ext_resource type="Script" uid="uid://dx04tocw8mxxw" path="res://scripts/dialog_box.gd" id="10_2m26h"]
+[ext_resource type="Script" path="res://scripts/npc_2.gd" id="7_2lenx"]
+[ext_resource type="Script" path="res://scripts/npc_3.gd" id="8_bdqck"]
+[ext_resource type="Script" path="res://scripts/npc_4.gd" id="9_wybuv"]
+[ext_resource type="Script" path="res://scripts/dialog_box.gd" id="10_2m26h"]
+[ext_resource type="Texture2D" uid="uid://qb2oblerr5r4" path="res://assets/GUI/pixel/Buttons/pass.png" id="11_j8x3v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3noka"]
 texture = ExtResource("1_077kq")
@@ -4429,21 +4430,6 @@ text = "oi
 label_settings = SubResource("LabelSettings_tyq3u")
 horizontal_alignment = 1
 
-[node name="pass" type="Button" parent="DialogBox/Panel"]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -76.0
-offset_top = -19.0
-offset_right = -11.0
-offset_bottom = 21.0
-grow_horizontal = 0
-grow_vertical = 2
-text = ">>>"
-
 [node name="Label2" type="Label" parent="DialogBox/Panel"]
 layout_mode = 1
 anchors_preset = 4
@@ -4458,6 +4444,24 @@ text = "nome"
 label_settings = SubResource("LabelSettings_5k68j")
 horizontal_alignment = 1
 uppercase = true
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -25.0
+offset_right = 16.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = 1.5708
+scale = Vector2(1.9, 1.9)
+icon = ExtResource("11_j8x3v")
+flat = true
 
 [connection signal="body_entered" from="porta_saida" to="porta_saida" method="_on_body_entered"]
 [connection signal="body_entered" from="npc 1" to="npc 1" method="_on_body_entered"]

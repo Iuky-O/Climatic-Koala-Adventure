@@ -1,16 +1,17 @@
-[gd_scene load_steps=43 format=4 uid="uid://41xbjd2cakvb"]
+[gd_scene load_steps=44 format=4 uid="uid://41xbjd2cakvb"]
 
-[ext_resource type="Texture2D" uid="uid://g5nhnofyas06" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Interiors_free_32x32.png" id="1_grj0w"]
-[ext_resource type="Texture2D" uid="uid://cw5mkxh5h7het" path="res://assets/cenario e itens/Interiores/Interiors_free/48x48/Interiors_free_48x48.png" id="2_wikep"]
-[ext_resource type="Texture2D" uid="uid://dw7lrkyb457am" path="res://assets/cenario e itens/Interiores/Interiors_free/48x48/Room_Builder_free_48x48.png" id="3_ya3tr"]
-[ext_resource type="Texture2D" uid="uid://f8ct5myy55ii" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Room_Builder_free_32x32.png" id="4_p5mo0"]
+[ext_resource type="Texture2D" uid="uid://cvbk8uf4bfjkv" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Interiors_free_32x32.png" id="1_grj0w"]
+[ext_resource type="Texture2D" uid="uid://c16gij87dojvq" path="res://assets/cenario e itens/Interiores/Interiors_free/48x48/Interiors_free_48x48.png" id="2_wikep"]
+[ext_resource type="Texture2D" uid="uid://bnbd7atfhjkbp" path="res://assets/cenario e itens/Interiores/Interiors_free/48x48/Room_Builder_free_48x48.png" id="3_ya3tr"]
+[ext_resource type="Texture2D" uid="uid://bnfm7jed0ua8e" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Room_Builder_free_32x32.png" id="4_p5mo0"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="5_b25u6"]
-[ext_resource type="Script" uid="uid://dvbdenwu81fo2" path="res://scripts/porta_biblioteca_saida.gd" id="6_wrn1f"]
-[ext_resource type="Script" uid="uid://bhfvb2vqaayle" path="res://scripts/npc_liv_1.gd" id="7_uk802"]
+[ext_resource type="Script" path="res://scripts/porta_biblioteca_saida.gd" id="6_wrn1f"]
+[ext_resource type="Script" path="res://scripts/npc_liv_1.gd" id="7_uk802"]
 [ext_resource type="PackedScene" uid="uid://bls0vw0qt1tg5" path="res://cena - personagens/npcs.tscn" id="8_e2qyr"]
-[ext_resource type="Script" uid="uid://b83h3hrwhvjod" path="res://scripts/npc_liv_2.gd" id="9_mtr6g"]
-[ext_resource type="Script" uid="uid://dlp2jgo1drek2" path="res://scripts/npc_liv_3.gd" id="10_0abpt"]
-[ext_resource type="Script" uid="uid://dx04tocw8mxxw" path="res://scripts/dialog_box.gd" id="11_asxjq"]
+[ext_resource type="Script" path="res://scripts/npc_liv_2.gd" id="9_mtr6g"]
+[ext_resource type="Script" path="res://scripts/npc_liv_3.gd" id="10_0abpt"]
+[ext_resource type="Script" path="res://scripts/dialog_box.gd" id="11_asxjq"]
+[ext_resource type="Texture2D" uid="uid://qb2oblerr5r4" path="res://assets/GUI/pixel/Buttons/pass.png" id="12_8gidv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tjw22"]
 texture = ExtResource("1_grj0w")
@@ -33258,21 +33259,6 @@ text = "oi
 label_settings = SubResource("LabelSettings_ytxvp")
 horizontal_alignment = 1
 
-[node name="pass" type="Button" parent="DialogBox/Panel"]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -76.0
-offset_top = -19.0
-offset_right = -11.0
-offset_bottom = 21.0
-grow_horizontal = 0
-grow_vertical = 2
-text = ">>>"
-
 [node name="Label2" type="Label" parent="DialogBox/Panel"]
 layout_mode = 1
 anchors_preset = 4
@@ -33287,6 +33273,24 @@ text = "nome"
 label_settings = SubResource("LabelSettings_2bl81")
 horizontal_alignment = 1
 uppercase = true
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -25.0
+offset_right = 16.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = 1.5708
+scale = Vector2(1.9, 1.9)
+icon = ExtResource("12_8gidv")
+flat = true
 
 [connection signal="body_entered" from="porta_saida" to="porta_saida" method="_on_body_entered"]
 [connection signal="body_entered" from="npc 1" to="npc 1" method="_on_body_entered"]
