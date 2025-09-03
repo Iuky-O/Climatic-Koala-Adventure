@@ -8,7 +8,7 @@ func _ready():
 
 	[b]Créditos[/b]
 
-	Assets:
+	[b]Assets[/b]
 	[url=https://limezu.itch.io/moderninteriors]Modern Interiors - LimeZu[/url]  
 	[url=https://toffeecraft.itch.io/animal-mega-pack]Animal Mega Pack - ToffeeCraft[/url]  
 	[url=https://nyknck.itch.io/citypackpixelart]City Pack Pixel Art - 
@@ -23,13 +23,13 @@ func _ready():
 	[url=https://n3cloud.itch.io/clover-valley-1616-farming-rpg-asset-pack]Clover Valley RPG Pack - Josee[/url]  
 
 	
-	Fontes:
+	[b]Fontes[/b]
 	[url=https://www.fontyukle.net/font/Marke-Eigenbau-Normal]Marke Eigenbau - Fontyukle[/url]
 	[url=https://www.fontyukle.net/font/revminipixel]Rev Mini Pixel - Fontyukle [/url]
 	[url=https://www.dafont.com/panicko.font]Panicko - Dafont[/url]
 	
 	
-	Música:
+	[b]Músicas[/b]
 	[url=https://freesound.org/people/sando2611/sounds/785420/]TENSION DRAMA LOOP PIANO - Sando2611[/url]
 	[url=https://opengameart.org/content/cosmic-cookie]Cosmic Cookie - Louswan[/url]
 	[url=https://pixabay.com/music/video-games-8-bit-arcade-138828/]8 bit Arcade - Moodmode[/url]

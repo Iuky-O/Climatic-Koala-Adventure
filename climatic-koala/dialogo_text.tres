@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://6m76ds1cyx3o"]
+
+[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="1_0ly2c"]
+
+[resource]
+default_font_size = 20
+Label/font_sizes/font_size = 80
+Label/fonts/font = ExtResource("1_0ly2c")

@@ -1,12 +1,13 @@
 extends Control
 
-@onready var dialogo = $MarginContainer/texto/RichTextLabel
+@onready var dialogo = $MarginContainer/texto/Label
 
 var text_lines = [
 	"As mudanças climáticas avançam mais rápido do que nunca...",
 	"O planeta já mostra sinais de caos e desequilíbrio.",
 	"Você parte rumo a uma vila nas montanhas, último refúgio seguro.",
-	"Lá, encontrará abrigo... e a chance de transformar o destino do mundo!"
+	"Lá, encontrará abrigo...",
+	"e a chance de transformar o destino do mundo!"
 ]
 
 var velocidade = 0.05

@@ -51,7 +51,7 @@ border_width_bottom = 1
 
 [resource]
 Button/colors/font_color = Color(1, 1, 1, 1)
-Button/font_sizes/font_size = 25
+Button/font_sizes/font_size = 35
 Button/fonts/font = ExtResource("1_7a0i1")
 Button/styles/focus = SubResource("StyleBoxFlat_dr8o4")
 Button/styles/hover = SubResource("StyleBoxFlat_rl5wi")

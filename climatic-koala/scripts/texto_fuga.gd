@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var dialogo = $RichTextLabel
+@onready var dialogo = $Label
 
 var text_lines = [
 	"Isso é o fim do mundo?!",

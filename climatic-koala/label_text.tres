@@ -1,6 +1,6 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://bkom3ia7p5bfe"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://da04uawrp5ekp"]
 
-[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="1_ii2q7"]
+[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="1_x00q5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l5oxf"]
 content_margin_left = 10.0
@@ -29,10 +29,10 @@ border_width_bottom = 1
 
 [resource]
 Label/font_sizes/font_size = 37
-Label/fonts/font = ExtResource("1_ii2q7")
+Label/fonts/font = ExtResource("1_x00q5")
 Label/styles/normal = SubResource("StyleBoxFlat_l5oxf")
 RichTextLabel/font_sizes/bold_font_size = 29
 RichTextLabel/font_sizes/normal_font_size = 34
-RichTextLabel/fonts/normal_font = ExtResource("1_ii2q7")
+RichTextLabel/fonts/normal_font = ExtResource("1_x00q5")
 RichTextLabel/styles/background = SubResource("StyleBoxFlat_vh7n2")
 RichTextLabel/styles/normal = SubResource("StyleBoxFlat_v7oqu")

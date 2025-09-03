@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://b30j0pnew2k7q"]
+[gd_scene load_steps=58 format=4 uid="uid://b30j0pnew2k7q"]
 
 [ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
 [ext_resource type="Script" path="res://scripts/casa_fuga.gd" id="1_t22sg"]
@@ -4895,10 +4895,25 @@ shadow_size = 2
 shadow_color = Color(0, 0, 0, 0.85098)
 shadow_offset = Vector2(1.5, 1)
 
+[sub_resource type="SystemFont" id="SystemFont_dg722"]
+font_italic = true
+font_weight = 300
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_w6o2y"]
+font = SubResource("SystemFont_dg722")
+font_size = 23
+shadow_color = Color(0, 0, 0, 0.85098)
+shadow_offset = Vector2(1.5, 1)
+
+[sub_resource type="Theme" id="Theme_o45ma"]
+Label/font_sizes/font_size = 27
+Label/fonts/font = ExtResource("11_ywl00")
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dy7do"]
 size = Vector2(222.625, 72)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gu1xc"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qufdg"]
 bg_color = Color(0, 0.364706, 0.705882, 0.67451)
 border_width_left = 1
 border_width_top = 1
@@ -4911,10 +4926,11 @@ corner_radius_bottom_left = 5
 shadow_size = 1
 
 [sub_resource type="Theme" id="Theme_ycsad"]
-Panel/styles/panel = SubResource("StyleBoxFlat_gu1xc")
+Panel/styles/panel = SubResource("StyleBoxFlat_qufdg")
 
-[sub_resource type="Theme" id="Theme_w01eg"]
-RichTextLabel/fonts/normal_font = ExtResource("11_ywl00")
+[sub_resource type="Theme" id="Theme_0sf2k"]
+Label/font_sizes/font_size = 35
+Label/fonts/font = ExtResource("11_ywl00")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r66nb"]
 size = Vector2(93, 13)
@@ -5054,7 +5070,8 @@ position = Vector2(572, 511)
 scale = Vector2(0.66453, 0.600671)
 texture = ExtResource("6_rh642")
 
-[node name="Panel" type="Panel" parent="DialogBox"]
+[node name="Panel3" type="Panel" parent="DialogBox"]
+visible = false
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -5064,7 +5081,8 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_6kmpl")
 
-[node name="TextureRect" type="TextureRect" parent="DialogBox/Panel"]
+[node name="TextureRect" type="TextureRect" parent="DialogBox/Panel3"]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -5080,13 +5098,13 @@ grow_vertical = 0
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("6_rh642")
 
-[node name="Dialog" type="Sprite2D" parent="DialogBox/Panel"]
+[node name="Dialog" type="Sprite2D" parent="DialogBox/Panel3"]
 visible = false
 position = Vector2(592, 38)
 scale = Vector2(0.66453, 0.600671)
 texture = ExtResource("6_rh642")
 
-[node name="Label" type="Label" parent="DialogBox/Panel"]
+[node name="Label" type="Label" parent="DialogBox/Panel3"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -5102,7 +5120,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="pass" type="Button" parent="DialogBox/Panel"]
+[node name="pass" type="Button" parent="DialogBox/Panel3"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -5115,7 +5133,7 @@ grow_horizontal = 2
 icon = ExtResource("8_2u84s")
 flat = true
 
-[node name="Label2" type="Label" parent="DialogBox/Panel"]
+[node name="Label2" type="Label" parent="DialogBox/Panel3"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -5129,6 +5147,64 @@ text = "nome"
 label_settings = SubResource("LabelSettings_biiuy")
 horizontal_alignment = 1
 uppercase = true
+
+[node name="Panel" type="Panel" parent="DialogBox"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -130.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 12.0
+offset_top = -53.0
+offset_right = 96.0
+offset_bottom = -21.0
+grow_vertical = 2
+text = "nome"
+label_settings = SubResource("LabelSettings_w6o2y")
+horizontal_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="pass" type="Button" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -56.0
+offset_right = 18.0
+offset_bottom = -32.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = 1.5708
+scale = Vector2(4, 4)
+icon = ExtResource("10_3or56")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="DialogBox/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 52.0
+offset_right = 20.0
+offset_bottom = 101.0
+grow_horizontal = 2
+theme = SubResource("Theme_o45ma")
+text = "oi"
 
 [node name="sala" type="Area2D" parent="."]
 monitorable = false
@@ -5172,22 +5248,17 @@ scale = Vector2(1.5, 1.5)
 theme = SubResource("Theme_ycsad")
 metadata/_edit_use_anchors_ = true
 
-[node name="RichTextLabel" type="RichTextLabel" parent="texto"]
+[node name="Label" type="Label" parent="texto"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -389.0
-offset_top = 18.0
-offset_right = 130.0
-offset_bottom = 69.0
+offset_left = -20.0
+offset_top = 36.0
+offset_right = 20.0
+offset_bottom = 85.0
 grow_horizontal = 2
-scale = Vector2(1.5, 1.5)
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme = SubResource("Theme_w01eg")
-text = "aeeeeeeeeeeeeeee"
-scroll_active = false
-metadata/_edit_use_anchors_ = true
+theme = SubResource("Theme_0sf2k")
+text = "oi"
 
 [node name="porta_saida" type="Area2D" parent="."]
 script = ExtResource("14_88ek8")

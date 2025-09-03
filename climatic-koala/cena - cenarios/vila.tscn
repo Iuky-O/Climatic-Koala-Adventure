@@ -23,6 +23,7 @@
 [ext_resource type="Script" path="res://scripts/porta_hospital_entra.gd" id="21_c3gup"]
 [ext_resource type="Script" path="res://scripts/dialog_box.gd" id="22_o2flt"]
 [ext_resource type="Texture2D" uid="uid://qb2oblerr5r4" path="res://assets/GUI/pixel/Buttons/pass.png" id="23_0bp3s"]
+[ext_resource type="Theme" uid="uid://bmj66oxplvh3t" path="res://label_text_dialogos.tres" id="23_1ioxs"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_iumy.gd" id="23_jhsnu"]
 [ext_resource type="PackedScene" uid="uid://cdtkkvdabd3u6" path="res://cena - personagens/iumy.tscn" id="24_32rvc"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_leticia.gd" id="25_iton0"]
@@ -5711,16 +5712,13 @@ size = Vector2(26, 37)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ye46a"]
 size = Vector2(53.5, 44)
 
-[sub_resource type="LabelSettings" id="LabelSettings_bsyi5"]
-font_size = 22
-
-[sub_resource type="SystemFont" id="SystemFont_6j8be"]
+[sub_resource type="SystemFont" id="SystemFont_objbr"]
 font_italic = true
 font_weight = 300
 subpixel_positioning = 0
 
-[sub_resource type="LabelSettings" id="LabelSettings_doumj"]
-font = SubResource("SystemFont_6j8be")
+[sub_resource type="LabelSettings" id="LabelSettings_d0mkw"]
+font = SubResource("SystemFont_objbr")
 font_size = 23
 shadow_color = Color(0, 0, 0, 0.85098)
 shadow_offset = Vector2(1.5, 1)
@@ -6058,42 +6056,44 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -62.0
+offset_top = -130.0
 grow_horizontal = 2
 grow_vertical = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="DialogBox/Panel"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -465.5
-offset_top = -18.5
-offset_right = 465.5
-offset_bottom = 18.5
+anchor_bottom = 1.0
+offset_left = -30.0
+offset_top = -92.0
+offset_right = 28.0
+offset_bottom = -25.0
 grow_horizontal = 2
-grow_vertical = 2
-text = "oi
-"
-label_settings = SubResource("LabelSettings_bsyi5")
+grow_vertical = 0
+theme = ExtResource("23_1ioxs")
+text = "oi"
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="DialogBox/Panel"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 17.0
-offset_top = -14.0
-offset_right = 101.0
-offset_bottom = 15.0
+offset_left = 12.0
+offset_top = -53.0
+offset_right = 96.0
+offset_bottom = -21.0
 grow_vertical = 2
 text = "nome"
-label_settings = SubResource("LabelSettings_doumj")
+label_settings = SubResource("LabelSettings_d0mkw")
 horizontal_alignment = 1
 uppercase = true
+metadata/_edit_use_anchors_ = true
 
 [node name="pass" type="Button" parent="DialogBox/Panel"]
 layout_mode = 1
@@ -6102,16 +6102,17 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -10.0
-offset_top = -25.0
-offset_right = 16.0
-offset_bottom = 15.0
+offset_left = -6.0
+offset_top = -56.0
+offset_right = 18.0
+offset_bottom = -32.0
 grow_horizontal = 0
 grow_vertical = 2
 rotation = 1.5708
-scale = Vector2(1.9, 1.9)
+scale = Vector2(4, 4)
 icon = ExtResource("23_0bp3s")
 flat = true
+metadata/_edit_use_anchors_ = true
 
 [node name="NPC - Iumy" type="Area2D" parent="."]
 z_index = 6

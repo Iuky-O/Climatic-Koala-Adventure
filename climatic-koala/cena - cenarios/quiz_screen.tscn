@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/quiz_screen.gd" id="1_i2cgy"]
 [ext_resource type="Theme" uid="uid://g0x7t2dfn4rk" path="res://new_theme.tres" id="2_fl5pk"]
 [ext_resource type="Texture2D" uid="uid://bbtql5hnssnpu" path="res://assets/GUI/bg/summer8/Summer8.png" id="2_fwxco"]
-[ext_resource type="Theme" uid="uid://bkom3ia7p5bfe" path="res://text.tres" id="3_eka5l"]
+[ext_resource type="Theme" uid="uid://da04uawrp5ekp" path="res://label_text.tres" id="3_ed0du"]
 [ext_resource type="Script" path="res://scripts/sai_pergunta.gd" id="4_mnao2"]
 [ext_resource type="Texture2D" uid="uid://cidvhv1qajun8" path="res://assets/GUI/pixel/Buttons/close_button_2.png" id="5_y7fyr"]
 [ext_resource type="Script" path="res://scripts/barra_progresso.gd" id="7_ttte3"]
@@ -54,14 +54,20 @@ size_flags_horizontal = 4
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 3
 size_flags_vertical = 4
 theme = SubResource("Theme_4fmh1")
 
-[node name="LabelPergunta" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("3_eka5l")
-text = "sjsndjsjndjsnjdnsjdn"
+theme = ExtResource("3_ed0du")
+text = "oi"
+
+[node name="LabelPergunta" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme = ExtResource("3_ed0du")
+text = "sjsndjsjndjsnjdnsjd"
 fit_content = true
 
 [node name="Button 1" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
@@ -96,10 +102,10 @@ anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.02
-offset_left = -545.0
+offset_left = -460.0
 offset_top = 22.0
-offset_right = 540.0
-offset_bottom = 22.04
+offset_right = 470.0
+offset_bottom = 26.04
 grow_horizontal = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_cbt8l")
 theme_override_styles/fill = SubResource("StyleBoxFlat_2qv13")

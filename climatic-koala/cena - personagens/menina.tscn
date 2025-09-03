@@ -192,7 +192,7 @@ position = Vector2(1.5, 3.66667)
 shape = SubResource("RectangleShape2D_vysw7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(3, 3)
 
 [node name="fixo_tela" type="CanvasLayer" parent="."]
 
@@ -227,12 +227,12 @@ offset_bottom = 148.0
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -122.0
-offset_top = -5.0
-offset_right = 953.0
-offset_bottom = 1027.0
+offset_left = -218.0
+offset_top = 3.0
+offset_right = 814.0
+offset_bottom = 1035.0
 grow_horizontal = 0
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.2, 0.2)
 theme_override_icons/icon = ExtResource("3_kni0x")
 flat = true
 script = ExtResource("3_yom3w")

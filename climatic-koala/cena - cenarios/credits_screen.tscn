@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bil2b1ov82orv" path="res://assets/GUI/bg/summer5/Summer5.png" id="1_bu3i3"]
 [ext_resource type="Texture2D" uid="uid://bcd2fco6njxlv" path="res://assets/GUI/logo 2.png" id="1_cgw7j"]
 [ext_resource type="Texture2D" uid="uid://cidvhv1qajun8" path="res://assets/GUI/pixel/Buttons/close_button_2.png" id="4_jvcc2"]
-[ext_resource type="Theme" uid="uid://bkom3ia7p5bfe" path="res://text.tres" id="5_t4c27"]
+[ext_resource type="Theme" uid="uid://bmj66oxplvh3t" path="res://label_text_dialogos.tres" id="5_iq03w"]
 [ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="6_ty1vq"]
 
 [node name="credits_screen" type="Control"]
@@ -72,7 +72,7 @@ theme_override_constants/margin_bottom = 0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer"]
 layout_mode = 2
-theme = ExtResource("5_t4c27")
+theme = ExtResource("5_iq03w")
 theme_override_font_sizes/bold_italics_font_size = 4
 autowrap_mode = 2
 

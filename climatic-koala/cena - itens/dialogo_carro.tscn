@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://d1do3au1pi2i3"]
 
 [ext_resource type="Script" path="res://scripts/dialogo_carro.gd" id="1_nn8rv"]
-[ext_resource type="Script" path="res://scripts/cena_história.gd" id="1_seavl"]
+[ext_resource type="Script" path="res://scripts/texto_fuga.gd" id="2_imolp"]
 [ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="2_xe2bk"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kkx6l"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gu1xc"]
 bg_color = Color(0, 0.364706, 0.705882, 0.67451)
 border_width_left = 1
 border_width_top = 1
@@ -16,11 +16,12 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 shadow_size = 1
 
-[sub_resource type="Theme" id="Theme_uo3vt"]
-Panel/styles/panel = SubResource("StyleBoxFlat_kkx6l")
+[sub_resource type="Theme" id="Theme_oqsfu"]
+Panel/styles/panel = SubResource("StyleBoxFlat_gu1xc")
 
-[sub_resource type="Theme" id="Theme_jll8r"]
-RichTextLabel/fonts/normal_font = ExtResource("2_xe2bk")
+[sub_resource type="Theme" id="Theme_iwo0x"]
+Label/font_sizes/font_size = 23
+Label/fonts/font = ExtResource("2_xe2bk")
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -40,7 +41,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="texto" type="CanvasLayer" parent="MarginContainer"]
-script = ExtResource("1_seavl")
+script = ExtResource("2_imolp")
 
 [node name="Panel" type="Panel" parent="MarginContainer/texto"]
 anchors_preset = 5
@@ -48,25 +49,24 @@ anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -412.0
 offset_top = 11.0
-offset_right = 138.0
+offset_right = 153.0
 offset_bottom = 74.0
 grow_horizontal = 2
 scale = Vector2(1.5, 1.5)
-theme = SubResource("Theme_uo3vt")
-metadata/_edit_use_anchors_ = true
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = SubResource("Theme_oqsfu")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/texto"]
+[node name="Label" type="Label" parent="MarginContainer/texto"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -389.0
-offset_top = 18.0
-offset_right = 130.0
-offset_bottom = 69.0
+offset_left = -20.0
+offset_top = 36.0
+offset_right = 20.0
+offset_bottom = 85.0
 grow_horizontal = 2
-scale = Vector2(1.5, 1.5)
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme = SubResource("Theme_jll8r")
-scroll_active = false
-metadata/_edit_use_anchors_ = true
+theme = SubResource("Theme_iwo0x")
+text = "oi"
+horizontal_alignment = 1
+vertical_alignment = 1

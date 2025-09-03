@@ -68,9 +68,9 @@ var pergunta_em_andamento = null
 		"id": "8",
 		"pergunta":"Por que plantar árvores é importante para o clima?",
 		"opc1":"Porque elas liberam mais gases poluentes",
-		"opc2":"Porque ajudam a absorver CO₂",
+		"opc2":"Porque ajudam a absorver CO2",
 		"opc3":"Porque aumentam a poluição",
-		"resposta":"Porque ajudam a absorver CO₂",
+		"resposta":"Porque ajudam a absorver CO2",
 	},
 	{
 		"id": "9",
