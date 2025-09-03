@@ -1,35 +1,15 @@
-[gd_scene load_steps=14 format=3 uid="uid://cssylas5piejf"]
+[gd_scene load_steps=12 format=3 uid="uid://cssylas5piejf"]
 
 [ext_resource type="Script" path="res://scripts/quiz_screen.gd" id="1_i2cgy"]
 [ext_resource type="Theme" uid="uid://g0x7t2dfn4rk" path="res://new_theme.tres" id="2_fl5pk"]
 [ext_resource type="Texture2D" uid="uid://bbtql5hnssnpu" path="res://assets/GUI/bg/summer8/Summer8.png" id="2_fwxco"]
-[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="3_lv2mq"]
+[ext_resource type="Theme" uid="uid://bkom3ia7p5bfe" path="res://text.tres" id="3_eka5l"]
 [ext_resource type="Script" path="res://scripts/sai_pergunta.gd" id="4_mnao2"]
 [ext_resource type="Texture2D" uid="uid://cidvhv1qajun8" path="res://assets/GUI/pixel/Buttons/close_button_2.png" id="5_y7fyr"]
 [ext_resource type="Script" path="res://scripts/barra_progresso.gd" id="7_ttte3"]
+[ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="8_ao364"]
 
 [sub_resource type="Theme" id="Theme_4fmh1"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vh7n2"]
-bg_color = Color(0.470803, 0.55835, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7oqu"]
-content_margin_left = 20.0
-content_margin_top = 20.0
-content_margin_right = 20.0
-content_margin_bottom = 20.0
-bg_color = Color(0, 0, 0, 0.545098)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-
-[sub_resource type="Theme" id="Theme_jqq5j"]
-RichTextLabel/font_sizes/bold_font_size = 24
-RichTextLabel/font_sizes/normal_font_size = 27
-RichTextLabel/fonts/normal_font = ExtResource("3_lv2mq")
-RichTextLabel/styles/background = SubResource("StyleBoxFlat_vh7n2")
-RichTextLabel/styles/normal = SubResource("StyleBoxFlat_v7oqu")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cbt8l"]
 border_color = Color(0.172549, 0.172549, 0.172549, 1)
@@ -80,7 +60,7 @@ theme = SubResource("Theme_4fmh1")
 
 [node name="LabelPergunta" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-theme = SubResource("Theme_jqq5j")
+theme = ExtResource("3_eka5l")
 text = "sjsndjsjndjsnjdnsjdn"
 fit_content = true
 
@@ -125,3 +105,5 @@ theme_override_styles/background = SubResource("StyleBoxFlat_cbt8l")
 theme_override_styles/fill = SubResource("StyleBoxFlat_2qv13")
 show_percentage = false
 script = ExtResource("7_ttte3")
+
+[node name="musica_incio" parent="." instance=ExtResource("8_ao364")]

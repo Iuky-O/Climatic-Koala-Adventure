@@ -4,13 +4,14 @@ var fallback_position = Vector2(0, 0)
 var cena_bonita = preload("res://cena - cenarios/vila.tscn")
 var cena_feia = preload("res://cena - cenarios/vila_doente.tscn")
 var cena_escolhida: PackedScene
+
 var instancia: Node = null
 
 func set_world():
 	var progresso = Dados.progresso_atual
 
 	# escolhe cena bonita ou feia
-	if progresso >= 50:
+	if progresso >= 100:
 		cena_escolhida = cena_bonita
 	else:
 		cena_escolhida = cena_feia

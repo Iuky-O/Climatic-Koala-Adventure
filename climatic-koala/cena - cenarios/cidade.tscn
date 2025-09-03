@@ -1,8 +1,9 @@
-[gd_scene load_steps=28 format=4 uid="uid://c8a4lr3mf5egq"]
+[gd_scene load_steps=29 format=4 uid="uid://c8a4lr3mf5egq"]
 
 [ext_resource type="Texture2D" uid="uid://b2s31iqbn1q2e" path="res://assets/cenario e itens/Cidades/CP_V1.0.4_nyknck/CP_V1.0.4.png" id="1_6jxe7"]
 [ext_resource type="PackedScene" uid="uid://oafwlkwkuddo" path="res://cena - itens/carro.tscn" id="2_0hoq7"]
 [ext_resource type="Script" path="res://scripts/Area_contato_cidade.gd" id="3_a4rsc"]
+[ext_resource type="PackedScene" uid="uid://c166ulbijvrtx" path="res://cena - itens/musica_tensa.tscn" id="4_d6t35"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5m7pt"]
 texture = ExtResource("1_6jxe7")
@@ -2599,7 +2600,7 @@ autoplay = "carro_andando"
 position = Vector2(564, 324)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-anchors_preset = -1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -2611,5 +2612,7 @@ script = ExtResource("3_a4rsc")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/Area2D"]
 position = Vector2(41, 114)
 shape = SubResource("RectangleShape2D_lhtul")
+
+[node name="musica_tensa" parent="." instance=ExtResource("4_d6t35")]
 
 [connection signal="body_entered" from="MarginContainer/Area2D" to="MarginContainer/Area2D" method="_on_body_entered"]

@@ -6,5 +6,4 @@ func _ready() -> void:
 func _on_pressed() -> void:
 	GameState.local_anterior = GameState.local_atual
 	GameState.local_atual = "dentro_progresso"
-	#get_tree().change_scene_to_file.bind("res://cena - cenarios/perguntas.tscn").call_deferred()
 	get_tree().change_scene_to_file.bind("res://cena - cenarios/quiz_screen.tscn").call_deferred()

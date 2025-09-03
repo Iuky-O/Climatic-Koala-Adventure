@@ -3,7 +3,7 @@ extends ProgressBar
 signal progresso_mudado
 
 var _progresso: int = 0
-var nova_xp: int = 25
+var nova_xp: int = 10
 
 @export var progresso: int:
 	set(value):

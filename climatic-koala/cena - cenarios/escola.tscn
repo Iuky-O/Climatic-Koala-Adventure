@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://dw8ht4voaou68"]
+[gd_scene load_steps=40 format=4 uid="uid://dw8ht4voaou68"]
 
 [ext_resource type="Texture2D" uid="uid://dj7f0efyfdrux" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="1_os7cc"]
 [ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="2_gn5md"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bof8fksqip0px" path="res://cena - personagens/alunos.tscn" id="10_drxau"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_aluno2.gd" id="11_18x5p"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_aluno3.gd" id="12_la1eq"]
+[ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="14_34iep"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ufqk"]
 texture = ExtResource("1_os7cc")
@@ -3882,6 +3883,8 @@ position = Vector2(420.5, 419)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC - Aluno 3"]
 position = Vector2(420, 421)
 shape = SubResource("RectangleShape2D_mpdha")
+
+[node name="musica_incio" parent="." instance=ExtResource("14_34iep")]
 
 [connection signal="body_entered" from="porta_vila" to="porta_vila" method="_on_body_entered"]
 [connection signal="body_entered" from="NPC - professora" to="NPC - professora" method="_on_body_entered"]

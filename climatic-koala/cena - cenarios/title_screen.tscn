@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c5neq7mc3nj1o"]
+[gd_scene load_steps=7 format=3 uid="uid://c5neq7mc3nj1o"]
 
 [ext_resource type="Script" path="res://scripts/title_screen.gd" id="1_yadma"]
 [ext_resource type="Texture2D" uid="uid://bcd2fco6njxlv" path="res://assets/GUI/logo 2.png" id="1_yq5py"]
 [ext_resource type="Theme" uid="uid://g0x7t2dfn4rk" path="res://new_theme.tres" id="2_iar6l"]
 [ext_resource type="Texture2D" uid="uid://cewwx27y883t1" path="res://assets/GUI/bg/summer6/Summer6.png" id="3_ia55k"]
 [ext_resource type="PackedScene" uid="uid://cm70s4n3mkoa" path="res://cena - itens/mundo.tscn" id="5_vwrmh"]
+[ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="6_x0is8"]
 
 [node name="titleScreen" type="Control"]
 layout_mode = 3
@@ -68,6 +69,8 @@ text = "Sair do Jogo"
 
 [node name="mundo" parent="MarginContainer/HBoxContainer" instance=ExtResource("5_vwrmh")]
 position = Vector2(-387, 61)
+
+[node name="musica_incio" parent="." instance=ExtResource("6_x0is8")]
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/start_btn" to="." method="_on_start_btn_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/credits_btn" to="." method="_on_credits_btn_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=4 uid="uid://604hv8v4gshu"]
+[gd_scene load_steps=53 format=4 uid="uid://604hv8v4gshu"]
 
 [ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_077kq"]
 [ext_resource type="Texture2D" uid="uid://dj7f0efyfdrux" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="2_epum1"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://scripts/npc_4.gd" id="9_wybuv"]
 [ext_resource type="Script" path="res://scripts/dialog_box.gd" id="10_2m26h"]
 [ext_resource type="Texture2D" uid="uid://qb2oblerr5r4" path="res://assets/GUI/pixel/Buttons/pass.png" id="11_j8x3v"]
+[ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="12_64o0w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3noka"]
 texture = ExtResource("1_077kq")
@@ -4462,6 +4463,8 @@ rotation = 1.5708
 scale = Vector2(1.9, 1.9)
 icon = ExtResource("11_j8x3v")
 flat = true
+
+[node name="musica_incio" parent="." instance=ExtResource("12_64o0w")]
 
 [connection signal="body_entered" from="porta_saida" to="porta_saida" method="_on_body_entered"]
 [connection signal="body_entered" from="npc 1" to="npc 1" method="_on_body_entered"]

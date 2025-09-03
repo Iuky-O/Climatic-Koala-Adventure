@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=4 uid="uid://b30j0pnew2k7q"]
+[gd_scene load_steps=55 format=4 uid="uid://b30j0pnew2k7q"]
 
 [ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
 [ext_resource type="Script" path="res://scripts/casa_fuga.gd" id="1_t22sg"]
@@ -14,6 +14,7 @@
 [ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="11_ywl00"]
 [ext_resource type="Script" path="res://scripts/texto_fuga.gd" id="12_sg6si"]
 [ext_resource type="Script" path="res://scripts/porta_saida_casa.gd" id="14_88ek8"]
+[ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="15_54nlm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s47rh"]
 texture = ExtResource("1_22gtn")
@@ -5194,6 +5195,8 @@ script = ExtResource("14_88ek8")
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="porta_saida"]
 position = Vector2(261.5, 390.5)
 shape = SubResource("RectangleShape2D_r66nb")
+
+[node name="musica_incio" parent="." instance=ExtResource("15_54nlm")]
 
 [connection signal="body_entered" from="sala" to="sala" method="_on_body_entered"]
 [connection signal="body_exited" from="sala" to="sala" method="_on_body_exited"]

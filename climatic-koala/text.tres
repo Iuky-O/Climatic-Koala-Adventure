@@ -1,0 +1,24 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://bkom3ia7p5bfe"]
+
+[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="1_ii2q7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vh7n2"]
+bg_color = Color(0.470803, 0.55835, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7oqu"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0, 0, 0, 0.545098)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[resource]
+RichTextLabel/font_sizes/bold_font_size = 24
+RichTextLabel/font_sizes/normal_font_size = 27
+RichTextLabel/fonts/normal_font = ExtResource("1_ii2q7")
+RichTextLabel/styles/background = SubResource("StyleBoxFlat_vh7n2")
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_v7oqu")

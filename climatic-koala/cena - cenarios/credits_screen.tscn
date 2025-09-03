@@ -1,0 +1,81 @@
+[gd_scene load_steps=7 format=3 uid="uid://du71qnx642nq"]
+
+[ext_resource type="Script" path="res://scripts/credits_screen.gd" id="1_0okqf"]
+[ext_resource type="Texture2D" uid="uid://bil2b1ov82orv" path="res://assets/GUI/bg/summer5/Summer5.png" id="1_bu3i3"]
+[ext_resource type="Texture2D" uid="uid://bcd2fco6njxlv" path="res://assets/GUI/logo 2.png" id="1_cgw7j"]
+[ext_resource type="Texture2D" uid="uid://cidvhv1qajun8" path="res://assets/GUI/pixel/Buttons/close_button_2.png" id="4_jvcc2"]
+[ext_resource type="Theme" uid="uid://bkom3ia7p5bfe" path="res://text.tres" id="5_t4c27"]
+[ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="6_ty1vq"]
+
+[node name="credits_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0okqf")
+
+[node name="bg" type="TextureRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bu3i3")
+expand_mode = 2
+
+[node name="game_logo" type="TextureRect" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -118.0
+offset_top = 11.0
+offset_right = 906.0
+offset_bottom = 1035.0
+grow_horizontal = 0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_cgw7j")
+
+[node name="Sair" type="Button" parent="."]
+z_index = 6
+layout_direction = 1
+layout_mode = 2
+offset_left = 7.0
+offset_top = 10.0
+offset_right = 140.0
+offset_bottom = 143.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_icons/icon = ExtResource("4_jvcc2")
+flat = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 135.0
+offset_top = 32.0
+offset_right = -119.0
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer"]
+layout_mode = 2
+theme = ExtResource("5_t4c27")
+theme_override_font_sizes/bold_italics_font_size = 4
+autowrap_mode = 2
+
+[node name="musica_incio" parent="." instance=ExtResource("6_ty1vq")]
+
+[connection signal="pressed" from="Sair" to="." method="_on_sair_pressed"]

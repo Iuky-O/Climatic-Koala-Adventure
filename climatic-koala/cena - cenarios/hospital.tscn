@@ -1,11 +1,12 @@
-[gd_scene load_steps=37 format=4 uid="uid://bjlidw74ryy0a"]
+[gd_scene load_steps=38 format=4 uid="uid://bjlidw74ryy0a"]
 
-[ext_resource type="Texture2D" uid="uid://chyqxlwgt6dgf" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/teste1.png" id="1_ex0kl"]
-[ext_resource type="Texture2D" uid="uid://f8ct5myy55ii" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_pt7y3"]
-[ext_resource type="Texture2D" uid="uid://cxewvujohfqmn" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="3_630bt"]
-[ext_resource type="Texture2D" uid="uid://g5nhnofyas06" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Interiors_free_32x32.png" id="4_urrnt"]
+[ext_resource type="Texture2D" uid="uid://wohgravf34pa" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/teste1.png" id="1_ex0kl"]
+[ext_resource type="Texture2D" uid="uid://bnfm7jed0ua8e" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_pt7y3"]
+[ext_resource type="Texture2D" uid="uid://dj7f0efyfdrux" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Interiors_free_16x16.png" id="3_630bt"]
+[ext_resource type="Texture2D" uid="uid://cvbk8uf4bfjkv" path="res://assets/cenario e itens/Interiores/Interiors_free/32x32/Interiors_free_32x32.png" id="4_urrnt"]
 [ext_resource type="PackedScene" uid="uid://dvinqlm3mwmwj" path="res://cena - personagens/menina.tscn" id="5_3lqtb"]
-[ext_resource type="Script" uid="uid://bs8k7qjbtjxe2" path="res://scripts/porta_hospital_saida.gd" id="6_3vagv"]
+[ext_resource type="Script" path="res://scripts/porta_hospital_saida.gd" id="6_3vagv"]
+[ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="7_s1qqm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ojj04"]
 texture = ExtResource("1_ex0kl")
@@ -17035,5 +17036,7 @@ script = ExtResource("6_3vagv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="porta_saida"]
 position = Vector2(857.917, 546.667)
 shape = SubResource("RectangleShape2D_8ncto")
+
+[node name="musica_incio" parent="." instance=ExtResource("7_s1qqm")]
 
 [connection signal="body_entered" from="porta_saida" to="porta_saida" method="_on_body_entered"]

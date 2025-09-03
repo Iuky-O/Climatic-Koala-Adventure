@@ -1,4 +1,4 @@
-[gd_scene load_steps=127 format=4 uid="uid://d3q30cdo4lo8s"]
+[gd_scene load_steps=128 format=4 uid="uid://d3q30cdo4lo8s"]
 
 [ext_resource type="Texture2D" uid="uid://cgb17bfm7qvjy" path="res://assets/cenario e itens/summer tilemap.png" id="1_w1p7b"]
 [ext_resource type="Texture2D" uid="uid://c78x7w086dvo5" path="res://assets/cenario e itens/summer and spring items.png" id="2_2jrnr"]
@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://dfkpcnogdo4gb" path="res://cena - personagens/eduardo.tscn" id="28_s6544"]
 [ext_resource type="Script" path="res://scripts/trigger_dialog_nicolas.gd" id="29_burvw"]
 [ext_resource type="PackedScene" uid="uid://btif44deo5p8y" path="res://cena - personagens/nicolas.tscn" id="30_mpc4p"]
+[ext_resource type="PackedScene" uid="uid://rrgyahh0xsax" path="res://cena - itens/musica_feliz.tscn" id="32_cc7ma"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_piw7h"]
 texture = ExtResource("1_w1p7b")
@@ -6162,6 +6163,8 @@ shape = SubResource("RectangleShape2D_xhqmo")
 
 [node name="nicolas" parent="NPC - Nicolas" instance=ExtResource("30_mpc4p")]
 position = Vector2(1059, 1153)
+
+[node name="musica_feliz" parent="." instance=ExtResource("32_cc7ma")]
 
 [connection signal="body_entered" from="porta_escola" to="porta_escola" method="_on_body_entered"]
 [connection signal="body_entered" from="porta_lanchonete" to="porta_lanchonete" method="_on_body_entered"]

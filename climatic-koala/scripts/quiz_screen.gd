@@ -31,8 +31,8 @@ func proxima_pergunta():
 	if pergunta_atual != null:
 		return
 
-	if Dados.perguntas.size() == 0:
-		lbl_pergunta.text = "Fim do jogo! Pontos: %d" % Dados.pontos
+	if Dados.perguntas.size() == 0 || Dados.progresso_atual == 100:
+		lbl_pergunta.text = "Fim do jogo! Você salvou o mundo! Pontos: %d" % Dados.pontos
 		btn1.disabled = true
 		btn2.disabled = true
 		btn3.disabled = true
@@ -78,7 +78,7 @@ func _on_responder(botao):
 	if botao.text == resposta_certa:
 		Dados.pontos += 1
 		# atualize progresso como preferir:
-		Dados.progresso_atual += 25
+		Dados.progresso_atual += 10
 		botao.modulate = Color(0, 1, 0) # Verde
 	else:
 		botao.modulate = Color(1, 0, 0) # Vermelho
