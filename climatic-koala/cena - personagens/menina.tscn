@@ -1,12 +1,12 @@
 [gd_scene load_steps=33 format=3 uid="uid://dvinqlm3mwmwj"]
 
 [ext_resource type="Script" path="res://scripts/menina.gd" id="1_k0ewq"]
-[ext_resource type="Texture2D" uid="uid://db30eg1qrodw6" path="res://assets/character/walk and idle.png" id="2_c718o"]
-[ext_resource type="Texture2D" uid="uid://cli780h832xl6" path="res://assets/cenario e itens/Comidas/garrafa_agua.png" id="3_ceofa"]
-[ext_resource type="Texture2D" uid="uid://dbvxmkplo8jxk" path="res://assets/GUI/pixel/Buttons/quest_button.png" id="3_kni0x"]
+[ext_resource type="Texture2D" uid="uid://dkr0rn5nb7iq3" path="res://assets/character/walk and idle.png" id="2_c718o"]
+[ext_resource type="Texture2D" uid="uid://f6otnur4j2id" path="res://assets/cenario e itens/Comidas/garrafa_agua.png" id="3_ceofa"]
 [ext_resource type="Script" path="res://scripts/entra_pergunta.gd" id="3_yom3w"]
-[ext_resource type="Texture2D" uid="uid://ddd7hsalywvcr" path="res://assets/cenario e itens/Comidas/fruta_maca.png" id="4_3266a"]
+[ext_resource type="Texture2D" uid="uid://cyicxkg4h1mb0" path="res://assets/cenario e itens/Comidas/fruta_maca.png" id="4_3266a"]
 [ext_resource type="Script" path="res://scripts/barra_progresso.gd" id="4_y7uff"]
+[ext_resource type="Texture2D" uid="uid://dgnwvpqbkdmr7" path="res://assets/GUI/pixel/Buttons/quiz.png" id="5_w6gbo"]
 [ext_resource type="PackedScene" uid="uid://sxkt5b7of27w" path="res://cena - itens/controle.tscn" id="8_gw8b8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bgnub"]
@@ -228,13 +228,13 @@ offset_bottom = 148.0
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -218.0
-offset_top = 3.0
-offset_right = 814.0
-offset_bottom = 1035.0
+offset_left = -288.0
+offset_top = -20.0
+offset_right = 1256.0
+offset_bottom = 1012.0
 grow_horizontal = 0
 scale = Vector2(0.2, 0.2)
-theme_override_icons/icon = ExtResource("3_kni0x")
+theme_override_icons/icon = ExtResource("5_w6gbo")
 flat = true
 script = ExtResource("3_yom3w")
 

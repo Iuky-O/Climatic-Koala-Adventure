@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=5 format=3 uid="uid://bkom3ia7p5bfe"]
 
-[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="1_ii2q7"]
+[ext_resource type="FontFile" uid="uid://dp7w2r1nvi01o" path="res://assets/fonts/Marke Eigenbau.ttf" id="1_ii2q7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l5oxf"]
 content_margin_left = 10.0

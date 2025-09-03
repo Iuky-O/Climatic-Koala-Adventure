@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=7 format=3 uid="uid://g0x7t2dfn4rk"]
 
-[ext_resource type="FontFile" uid="uid://dr2sgm2d7pm3h" path="res://assets/fonts/Rev Mini Pixel.ttf" id="1_7a0i1"]
+[ext_resource type="FontFile" uid="uid://bxof3uf505uvc" path="res://assets/fonts/Rev Mini Pixel.ttf" id="1_7a0i1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dr8o4"]
 content_margin_top = 5.0

@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=5 format=3 uid="uid://nkkl7q2qnibj"]
 
-[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="1_3sx52"]
+[ext_resource type="FontFile" uid="uid://dp7w2r1nvi01o" path="res://assets/fonts/Marke Eigenbau.ttf" id="1_3sx52"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrl0b"]
 bg_color = Color(0, 0.678431, 0.717647, 1)
