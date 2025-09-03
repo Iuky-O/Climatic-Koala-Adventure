@@ -4,102 +4,67 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-var touch_target: Vector2 = Vector2.ZERO
-var touch_active: bool = false 
-
+@onready var btn_up = $fixo_tela/controle/CanvasLayer/subir
+@onready var btn_down = $fixo_tela/controle/CanvasLayer/descer
+@onready var btn_left = $fixo_tela/controle/CanvasLayer/esquerda
+@onready var btn_right = $fixo_tela/controle/CanvasLayer/direita
 
 func _ready() -> void:
 	print("---------------------------------------")
 	print("Menina spawnou em: ", global_position)
 	print("Local anterior: ", GameState.local_anterior)
 	print("Local atual: ", GameState.local_atual)
-	print("Cena", GameState.cena_atual)
 	print("---------------------------------------")
-	touch_target = global_position
 
-func _exit_tree():
-	print("Menina removida da árvore")
-	
 func _process(delta: float) -> void:
 	GameState.local_mapa = Vector2(global_position)
-	$fixo_tela/total_agua.text = str(Dados.agua)
-	$fixo_tela/total_comida.text = str(Dados.comida)
-	print("Menina esta em: ", global_position)
-	#print("global = ",GameState.local_mapa)
-
-func _input(event):
-	if GameState.ui_active:
-		touch_active = false
-		return
+	$fixo_tela/total_agua.text = str("Água = ", Dados.agua)
+	$fixo_tela/total_comida.text = str("Comida = ", Dados.comida)
 	
-	if event is InputEventScreenTouch or event is InputEventMouseButton:
-		if event.pressed:
-			var dialog_layer = get_node_or_null("/root/Node2D/CanvasLayer")
-			if dialog_layer and dialog_layer.visible:
-				touch_active = false
-				return
-			touch_target = event.position
-			touch_active = true
-		else:
-			touch_active = false
-
-
 func _physics_process(delta: float) -> void:
 	
 	if GameState.ui_active:
 		velocity = Vector2.ZERO
-		touch_active = false
 		$AnimatedSprite2D.play("parada")
 		move_and_slide()
 		return
 
-	# Add the gravity.
-	if not is_on_floor():
-		velocity.y += ProjectSettings.get_setting("physics/2d/default_gravity") * delta
+	var direction = Vector2.ZERO
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Pega direção
-	var directionX := Input.get_axis("ui_left", "ui_right")
-	var directionY := Input.get_axis("ui_up", "ui_down")
-	var direction = Vector2(directionX, directionY).normalized()
-
-	# Movimento por toque se houver
-	if touch_active:
-		var delta_pos = touch_target - position
-		if abs(delta_pos.x) > abs(delta_pos.y):
-			direction.x = sign(delta_pos.x)
-			direction.y = 0
-		else:
-			direction.x = 0
-			direction.y = sign(delta_pos.y)
+	# Movimento teclado
+	if Input.is_action_pressed("ui_left"):
+		direction.x = -1
+	elif Input.is_action_pressed("ui_right"):
+		direction.x = 1
+	elif Input.is_action_pressed("ui_up"):
+		direction.y = -1
+	elif Input.is_action_pressed("ui_down"):
+		direction.y = 1
 		
-		if position.distance_to(touch_target) < 10:
-			touch_active = false
+	# movimento por botões da tela
+	elif btn_left.is_pressed():
+		direction.x = -1
+	elif btn_right.is_pressed():
+		direction.x = 1
+	elif btn_up.is_pressed():
+		direction.y = -1
+	elif btn_down.is_pressed():
+		direction.y = 1
 
-	# Movimento
 	if direction != Vector2.ZERO:
-		velocity.x = direction.x * SPEED
-		velocity.y = direction.y * SPEED
+		velocity = direction * SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.y = move_toward(velocity.y, 0, SPEED)
-
+		velocity = Vector2.ZERO
+		
+		
 	move_and_slide()
 
-	# Animações
-	if Input.is_action_pressed("ui_left"):
-		$AnimatedSprite2D.play("andando_esquerda")
-	elif Input.is_action_pressed("ui_right"):
-		$AnimatedSprite2D.play("andando_direita")
-	else:
-		$AnimatedSprite2D.play("parada")
-		
+	## Animações
 	if direction.x < 0:
 		$AnimatedSprite2D.play("andando_esquerda")
 	elif direction.x > 0:
+		$AnimatedSprite2D.play("andando_direita")
+	elif direction.y != 0:
 		$AnimatedSprite2D.play("andando_direita")
 	else:
 		$AnimatedSprite2D.play("parada")

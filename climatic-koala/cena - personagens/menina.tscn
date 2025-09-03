@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://dvinqlm3mwmwj"]
+[gd_scene load_steps=33 format=3 uid="uid://dvinqlm3mwmwj"]
 
 [ext_resource type="Script" path="res://scripts/menina.gd" id="1_k0ewq"]
 [ext_resource type="Texture2D" uid="uid://db30eg1qrodw6" path="res://assets/character/walk and idle.png" id="2_c718o"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://scripts/entra_pergunta.gd" id="3_yom3w"]
 [ext_resource type="Texture2D" uid="uid://ddd7hsalywvcr" path="res://assets/cenario e itens/Comidas/fruta_maca.png" id="4_3266a"]
 [ext_resource type="Script" path="res://scripts/barra_progresso.gd" id="4_y7uff"]
+[ext_resource type="PackedScene" uid="uid://sxkt5b7of27w" path="res://cena - itens/controle.tscn" id="8_gw8b8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bgnub"]
 atlas = ExtResource("2_c718o")
@@ -241,13 +242,17 @@ script = ExtResource("3_yom3w")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -51.0
-offset_top = 12.0
-offset_right = 49.0
-offset_bottom = 17.0
+offset_left = -223.0
+offset_top = 11.0
+offset_right = 75.0
+offset_bottom = 23.0
 grow_horizontal = 2
 scale = Vector2(1.5, 1.5)
 theme_override_styles/background = SubResource("StyleBoxFlat_d02u4")
 theme_override_styles/fill = SubResource("StyleBoxFlat_kkkhr")
 show_percentage = false
 script = ExtResource("4_y7uff")
+
+[node name="controle" parent="fixo_tela" instance=ExtResource("8_gw8b8")]
+
+[editable path="fixo_tela/controle"]

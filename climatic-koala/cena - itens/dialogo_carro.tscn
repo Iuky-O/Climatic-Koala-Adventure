@@ -66,6 +66,7 @@ offset_top = 36.0
 offset_right = 20.0
 offset_bottom = 85.0
 grow_horizontal = 2
+scale = Vector2(0.995789, 1)
 theme = SubResource("Theme_iwo0x")
 text = "oi"
 horizontal_alignment = 1
