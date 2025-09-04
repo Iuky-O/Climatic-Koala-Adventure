@@ -11,5 +11,5 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		GameState.local_anterior = GameState.local_atual
 		GameState.local_atual = "fora_mercearia"
-		GameState.cena_atual = "res://cena - cenarios/main.tscn"
+		GameState.cena_atual = GameState.cena_main
 		get_tree().change_scene_to_file.bind("res://cena - cenarios/main.tscn").call_deferred()

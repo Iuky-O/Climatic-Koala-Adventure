@@ -27,7 +27,7 @@ func _start_dialogue() -> void:
 		await _mostrar_dialogo(fala)
 	GameState.local_anterior = GameState.local_atual
 	GameState.local_atual = "fora_escola"
-	GameState.cena_atual = "res://cena - cenarios/main.tscn"
+	GameState.cena_atual = GameState.cena_main
 	get_tree().change_scene_to_file("res://cena - cenarios/main.tscn")
 
 func _mostrar_dialogo(texto: String) -> void:

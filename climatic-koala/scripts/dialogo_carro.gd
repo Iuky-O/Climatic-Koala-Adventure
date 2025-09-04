@@ -23,7 +23,7 @@ func _start_dialogue() -> void:
 	
 	GameState.local_anterior = GameState.local_atual
 	GameState.local_atual = "fora_escola"
-	GameState.cena_atual = "PackedScene#-9223371813063490274" #isso é a main
+	GameState.cena_atual = GameState.cena_main
 	get_tree().change_scene_to_file("res://cena - cenarios/main.tscn")
 
 func _mostrar_dialogo(texto: String) -> void:
