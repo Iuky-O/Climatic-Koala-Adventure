@@ -193,7 +193,7 @@ position = Vector2(1.5, 3.66667)
 shape = SubResource("RectangleShape2D_vysw7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
+zoom = Vector2(2, 2)
 
 [node name="fixo_tela" type="CanvasLayer" parent="."]
 

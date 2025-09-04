@@ -2132,7 +2132,7 @@ sources/12 = SubResource("TileSetAtlasSource_c06sf")
 sources/13 = SubResource("TileSetAtlasSource_aguni")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i2g6a"]
-size = Vector2(100, 72.3334)
+size = Vector2(100, 76.3331)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7epev"]
 texture = ExtResource("5_n1yuy")
@@ -6022,7 +6022,7 @@ shadow_offset = Vector2(1.5, 1)
 size = Vector2(22, 26)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1i3xi"]
-size = Vector2(24, 25)
+size = Vector2(24, 26)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h53oy"]
 size = Vector2(24, 23)
@@ -6162,7 +6162,7 @@ position = Vector2(166.667, 698.667)
 shape = SubResource("RectangleShape2D_i2g6a")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="pracinha e predios/StaticBody2D"]
-position = Vector2(312.667, 697.167)
+position = Vector2(312.667, 699.167)
 shape = SubResource("RectangleShape2D_i2g6a")
 
 [node name="rua" type="TileMapLayer" parent="."]
@@ -6335,7 +6335,7 @@ position = Vector2(332.75, 169.5)
 shape = SubResource("RectangleShape2D_n4dif")
 
 [node name="fogo1" parent="." instance=ExtResource("24_y8krp")]
-position = Vector2(-425, 244)
+position = Vector2(-388, 753)
 scale = Vector2(0.3, 0.3)
 
 [node name="fogo2" parent="." instance=ExtResource("24_y8krp")]
@@ -6347,7 +6347,7 @@ position = Vector2(322, 1388)
 scale = Vector2(0.3, 0.3)
 
 [node name="fogo4" parent="." instance=ExtResource("24_y8krp")]
-position = Vector2(1029, -81)
+position = Vector2(1028, -39)
 scale = Vector2(0.3, 0.3)
 
 [node name="DialogBox" type="CanvasLayer" parent="."]
@@ -6440,7 +6440,7 @@ script = ExtResource("28_d7g05")
 position = Vector2(359, 1095)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC - Leticia"]
-position = Vector2(359, 1097.5)
+position = Vector2(359, 1098)
 shape = SubResource("RectangleShape2D_1i3xi")
 
 [node name="NPC - Eduardo" type="Area2D" parent="."]

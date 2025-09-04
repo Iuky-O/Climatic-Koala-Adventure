@@ -1837,7 +1837,7 @@ sources/12 = SubResource("TileSetAtlasSource_dd75g")
 sources/13 = SubResource("TileSetAtlasSource_xtdbp")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys3jj"]
-size = Vector2(100, 70.3334)
+size = Vector2(100, 73.6667)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rfxij"]
 texture = ExtResource("5_usw6m")
@@ -5868,7 +5868,7 @@ position = Vector2(166, 698)
 shape = SubResource("RectangleShape2D_ys3jj")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="pracinha e predios/StaticBody2D"]
-position = Vector2(311.333, 697.5)
+position = Vector2(311.333, 699.167)
 shape = SubResource("RectangleShape2D_ys3jj")
 
 [node name="rua" type="TileMapLayer" parent="."]
