@@ -142,7 +142,7 @@ var pergunta_em_andamento = null
 		"opc1":"As árvores absorvem CO₂ e ajudam a combater o aquecimento global",
 		"opc2":"As árvores produzem gases do efeito estufa",
 		"opc3":"Plantar árvores não tem impacto",
-		"resposta":"As árvores absorvem CO₂ e ajudam a combater o aquecimento global",
+		"resposta":"As árvores absorvem CO2 e ajudam a combater o aquecimento global",
 	},
 	{
 		"id": "18",
