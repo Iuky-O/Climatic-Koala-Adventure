@@ -50,6 +50,7 @@ func set_local_map():
 			spawn_position = GameState.local_mapa
 		_:
 			spawn_position = Vector2(371, 300)  # Fallback - nascimento padrão
+			get_tree().change_scene_to_file("res://cena - cenarios/main.tscn")
 	
 	print("Spawning em: ", spawn_position)
 	GameState.spawn_player_at(spawn_position, self)

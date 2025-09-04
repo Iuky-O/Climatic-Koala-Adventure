@@ -3,15 +3,15 @@ extends Area2D
 @export var dialog_lines = []
 
 var dialog_lines_1 = [
-	"Hoje sim... é um bom dia!",
+	"Hoje sim... e' um bom dia!",
 	"Ando menos ansioso agora.",
-	"Você ainda está muito perto.. Saia.",
+	"Voce ainda esta muito perto.. Saia.",
 ]
 
 var dialog_lines_2 = [	
-	"Você está muito perto.",
-	"O clima está cada dia mais estranho...",
-	"Os animais sumiram ou morreram... isso é desesperador.",
+	"Voce esta muito perto.",
+	"O clima esta cada dia mais estranho...",
+	"Os animais sumiram ou morreram... isso e' desesperador.",
 	"Hum, perto demias. Saia ou vai se ver com a minha namorada.",
 ]
 

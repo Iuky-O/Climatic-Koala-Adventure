@@ -6,7 +6,7 @@ extends Area2D
 	"Oi! Você sabia que existe a ODS 13?",
 	"Ela fala sobre combater a mudança do clima e seus efeitos.",
 	"Isso inclui reduzir gases poluentes e proteger ecossistemas.",
-	"Pequenas ações do dia a dia já ajudam muito!",
+	"Pequenas açoes do dia a dia ja ajudam muito!",
 ]
 
 @export var nome = "Marco"

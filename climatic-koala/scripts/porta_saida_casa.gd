@@ -18,4 +18,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 		await get_tree().create_timer(0.2).timeout
 
+		GameState.local_anterior = GameState.local_atual
+		GameState.local_atual = "fora_casa"
+		GameState.cena_atual = "res://cena - cenarios/cidade.tscn"
 		get_tree().change_scene_to_file("res://cena - cenarios/cidade.tscn")

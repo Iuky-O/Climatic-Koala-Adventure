@@ -4,7 +4,7 @@ extends Area2D
 
 @export var dialog_lines = [
 	"Eu amo vir a escola.",
-	"Tem a merenda e a professora é muito bonita."
+	"Tem a merenda e a professora e' muito bonita."
 ]
 
 @export var nome = "Vernon"

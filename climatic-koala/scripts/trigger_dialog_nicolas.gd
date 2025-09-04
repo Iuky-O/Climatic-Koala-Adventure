@@ -3,8 +3,8 @@ extends Area2D
 @export var dialog_lines = []
 
 var dialog_lines_1 = [
-	"O dia está lindo para um encontro.",
-	"Espero que o mundo não acabe agora...",
+	"O dia esta lindo para um encontro.",
+	"Espero que o mundo nao acabe agora...",
 	"Ela vai chegar logo, certo?",
 	"Tchau!"
 ]
@@ -12,7 +12,7 @@ var dialog_lines_1 = [
 var dialog_lines_2 = [	
 	"Muito calor!",
 	"Soube que em alguns lugares esta nevando onde nunca nevou.",
-	"Chovendo mais que o normal ou secas terríveis.",
+	"Chovendo mais que o normal ou secas terriveis.",
 	"Isso perde o clima para um encontro.",
 ]
 

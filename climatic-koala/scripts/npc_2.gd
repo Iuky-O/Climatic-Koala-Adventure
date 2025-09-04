@@ -4,7 +4,7 @@ extends Area2D
 
 @export var dialog_lines = [
 	"Sou apoiador de coisas ambientais sabe.",
-	"Mas só como plantas. Isso seria hipocrisia?",
+	"Mas so como plantas. Isso seria hipocrisia?",
 	"Por falar nisso... saia da minha cozinha."
 ]
 

@@ -3,7 +3,7 @@ extends Area2D
 @export var animation_to_play: String = "amarelo"
 
 @export var dialog_lines = [
-	"Sabe eu tenho medo do rumo que o mundo está indo.",
+	"Sabe eu tenho medo do rumo que o mundo esta indo.",
 	"E olha que sou crinça."
 ]
 

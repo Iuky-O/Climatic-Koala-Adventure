@@ -3,16 +3,16 @@ extends Area2D
 @export var dialog_lines = []
 
 var dialog_lines_1 = [	
-	"Estou tão feliz!",
-	"O clima melhorou bastante graças a você...",
-	"Mas não esqueça, isso é apenas o começo.",
-	"Não podemos parar nunca.",
-	"Obrigada, até a próxima!",
+	"Estou tao feliz!",
+	"O clima melhorou bastante graças a voce...",
+	"Mas nao esqueça, isso e' apenas o começo.",
+	"Nao podemos parar nunca.",
+	"Obrigada, ate a proxima!",
 ]
 
 var dialog_lines_2 = [
-	"Oi! Você parece novo aqui.",
-	"Cuidado por ai, aqui é mais perigoso do que parece...",
+	"Oi! Voce parece novo aqui.",
+	"Cuidado por ai, aqui e' mais perigoso do que parece...",
 	"Se bem que somos os mais perigosos aqui.",
 	"Boa sorte na sua jornada!",
 ]

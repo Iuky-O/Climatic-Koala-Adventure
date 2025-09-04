@@ -3,10 +3,11 @@ extends CanvasLayer
 @onready var dialogo = $MarginContainer/texto/RichTextLabel
 
 var text_lines = [
-	"As mudanças climáticas avançam mais rápido do que nunca...",
-	"O planeta já mostra sinais de caos e desequilíbrio.",
-	"Você parte rumo a uma vila nas montanhas, último refúgio seguro.",
-	"Lá, encontrará abrigo... e a chance de transformar o destino do mundo!"
+	"As mudanças climaticas avançam mais rapido do que nunca...",
+	"O planeta ja mostra sinais de caos e desequilabrio.",
+	"Voce parte rumo a uma vila nas montanhas, ultimo refugio seguro.",
+	"La, encontrara abrigo...",
+	"e a chance de transformar o destino do mundo!"
 ]
 
 var velocidade = 0.05
@@ -24,7 +25,9 @@ func iniciar_dialogo():
 func _start_dialogue() -> void:
 	for fala in text_lines:
 		await _mostrar_dialogo(fala)
-	
+	GameState.local_anterior = GameState.local_atual
+	GameState.local_atual = "fora_escola"
+	GameState.cena_atual = "res://cena - cenarios/main.tscn"
 	get_tree().change_scene_to_file("res://cena - cenarios/main.tscn")
 
 func _mostrar_dialogo(texto: String) -> void:

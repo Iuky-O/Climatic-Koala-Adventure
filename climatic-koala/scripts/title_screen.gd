@@ -12,6 +12,9 @@ func _process(delta: float) -> void:
 
 
 func _on_start_btn_pressed() -> void:
+	GameState.local_anterior = GameState.local_atual
+	GameState.local_atual = "dentro_casa"
+	GameState.cena_atual = "res://cena - cenarios/casa.tscn"
 	get_tree().change_scene_to_file("res://cena - cenarios/casa.tscn")
 
 

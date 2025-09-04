@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=4 uid="uid://b30j0pnew2k7q"]
+[gd_scene load_steps=60 format=4 uid="uid://b30j0pnew2k7q"]
 
 [ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
 [ext_resource type="Script" path="res://scripts/casa_fuga.gd" id="1_t22sg"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" path="res://scripts/texto_fuga.gd" id="12_sg6si"]
 [ext_resource type="Script" path="res://scripts/porta_saida_casa.gd" id="14_88ek8"]
 [ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="15_54nlm"]
+[ext_resource type="Script" path="res://scripts/fuga_trigger.gd" id="16_k0yjf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s47rh"]
 texture = ExtResource("1_22gtn")
@@ -4911,7 +4912,7 @@ Label/font_sizes/font_size = 27
 Label/fonts/font = ExtResource("11_ywl00")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dy7do"]
-size = Vector2(222.625, 72)
+size = Vector2(87.6255, 72)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qufdg"]
 bg_color = Color(0, 0.364706, 0.705882, 0.67451)
@@ -4934,6 +4935,9 @@ Label/fonts/font = ExtResource("11_ywl00")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r66nb"]
 size = Vector2(93, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yobyq"]
+size = Vector2(88, 71)
 
 [node name="casa" type="TileMapLayer"]
 script = ExtResource("1_t22sg")
@@ -5211,7 +5215,7 @@ monitorable = false
 script = ExtResource("6_ecqc5")
 
 [node name="CollisionShapeSala" type="CollisionShape2D" parent="sala"]
-position = Vector2(367.313, 284)
+position = Vector2(434.813, 284)
 shape = SubResource("RectangleShape2D_dy7do")
 
 [node name="pass" type="Button" parent="."]
@@ -5269,6 +5273,15 @@ shape = SubResource("RectangleShape2D_r66nb")
 
 [node name="musica_incio" parent="." instance=ExtResource("15_54nlm")]
 
+[node name="fuga" type="Area2D" parent="."]
+script = ExtResource("16_k0yjf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fuga"]
+position = Vector2(288, 283)
+shape = SubResource("RectangleShape2D_yobyq")
+
 [connection signal="body_entered" from="sala" to="sala" method="_on_body_entered"]
 [connection signal="body_exited" from="sala" to="sala" method="_on_body_exited"]
 [connection signal="body_entered" from="porta_saida" to="porta_saida" method="_on_body_entered"]
+[connection signal="body_entered" from="fuga" to="fuga" method="_on_body_entered"]
+[connection signal="body_exited" from="fuga" to="fuga" method="_on_body_exited"]

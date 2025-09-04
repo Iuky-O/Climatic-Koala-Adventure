@@ -3,8 +3,8 @@ extends Area2D
 @export var animation_to_play: String = "pessoa 3"
 
 @export var dialog_lines = [
-	"Não esqueça, NUNCA jogue lixo na rua ou desmate as árvores.",
-	"Só não vem dizendo que não avisei quando estiver morrendo de calor."
+	"Não esqueça, NUNCA jogue lixo na rua ou desmate as arvores.",
+	"So não vem dizendo que nao avisei quando estiver morrendo de calor."
 ]
 
 @export var nome = "João"

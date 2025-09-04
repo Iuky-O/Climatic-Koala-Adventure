@@ -2,19 +2,17 @@ extends CanvasLayer
 
 @onready var dialogo = $Label
 
-var text_lines = [
-	"Isso é o fim do mundo?!",
-	"Preciso fugir!!!!!!"
-]
+var text_lines = []
 
 var velocidade = 0.05
 var is_dialogue_active = false
 
 
-func start_dialogue() -> void:
+func start_dialogue(lines) -> void:
 	if is_dialogue_active:
 		return
 	
+	text_lines = lines
 	is_dialogue_active = true
 	visible = true
 	_do_dialogue()

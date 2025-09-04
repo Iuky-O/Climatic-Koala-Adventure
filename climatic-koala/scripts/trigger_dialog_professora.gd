@@ -1,9 +1,9 @@
 extends Area2D
 
 @export var dialog_lines = [
-	"Você já sentiu o calor mais intenso ultimamente?",
-	"A ODS 13 fala de adaptação a eventos extremos...",
-	"Cidades precisam de sombra, água e alerta rápido.",
+	"Voce ja sentiu o calor mais intenso ultimamente?",
+	"A ODS 13 fala de adaptaçao a eventos extremos...",
+	"Cidades precisam de sombra, agua e alerta rapido.",
 	"Vamos começar pelo que dá pra mudar hoje?",
 ]
 

@@ -17,6 +17,14 @@ func _ready() -> void:
 	print("---------------------------------------")
 
 func _process(delta: float) -> void:
+	#print("---------------------------------------")
+	#print("Menina spawnou em: ", global_position)
+	#print("Local anterior: ", GameState.local_anterior)
+	#print("Local atual: ", GameState.local_atual)
+	#print("Cena atual: ", GameState.cena_atual)
+	#print("---------------------------------------")
+	
+	print(GameState.local_mapa)
 	GameState.local_mapa = Vector2(global_position)
 	$fixo_tela/total_agua.text = str("Água = ", Dados.agua)
 	$fixo_tela/total_comida.text = str("Comida = ", Dados.comida)
