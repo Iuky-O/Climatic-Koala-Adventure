@@ -1,7 +1,7 @@
 extends Area2D
 
 var text_lines = [
-	"Isso e' o fim do mundo?!",
+	"Isso é o fim do mundo?!",
 	"Preciso fugir!!!!!!"
 ]
 

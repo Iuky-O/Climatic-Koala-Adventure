@@ -254,33 +254,4 @@ show_percentage = false
 script = ExtResource("4_y7uff")
 
 [node name="controle" parent="fixo_tela" instance=ExtResource("8_gw8b8")]
-
-[node name="CanvasLayer" parent="fixo_tela/controle" index="0"]
 scale = Vector2(1.5, 1.5)
-transform = Transform2D(1.5, 0, 0, 1.5, 0, 0)
-
-[node name="subir" parent="fixo_tela/controle/CanvasLayer" index="0"]
-offset_left = 109.0
-offset_top = -532.0
-offset_right = 184.0
-offset_bottom = -502.0
-
-[node name="descer" parent="fixo_tela/controle/CanvasLayer" index="1"]
-offset_left = 111.0
-offset_top = -470.0
-offset_right = 186.0
-offset_bottom = -440.0
-
-[node name="esquerda" parent="fixo_tela/controle/CanvasLayer" index="2"]
-offset_left = 16.0
-offset_top = -501.0
-offset_right = 97.0
-offset_bottom = -471.0
-
-[node name="direita" parent="fixo_tela/controle/CanvasLayer" index="3"]
-offset_left = 199.0
-offset_top = -501.0
-offset_right = 274.0
-offset_bottom = -471.0
-
-[editable path="fixo_tela/controle"]
