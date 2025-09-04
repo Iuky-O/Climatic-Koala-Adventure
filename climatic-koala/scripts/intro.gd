@@ -9,14 +9,14 @@ extends Area2D
 #]
 
 @export var dialog_lines = [
-	"As sirenes de evacuaçao ecoam pela costa.",
-	"O megatsunami ja atingiu o litoral sul.",
-	"Inundaçoes e destruiçao se espalham rapidamente.",
-	"Quem ainda estiver na zona de risco, va' para as terras altas.",
-	"As montanhas sao o unico refugio seguro!"
+	"As sirenes de evacuação ecoam pela costa.",
+	"O megatsunami já atingiu o litoral sul.",
+	"Inundações e destruição se espalham rapidamente.",
+	"Quem ainda estiver na zona de risco, vá para as terras altas.",
+	"As montanhas são o único refúgio seguro!"
 ]
 
-@export var nome = "Noticiario"
+@export var nome = "Noticiário"
 
 func _ready():
 	if GameState.noticiario_mostrado:

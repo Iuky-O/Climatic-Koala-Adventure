@@ -4,7 +4,7 @@ extends Area2D
 
 @export var dialog_lines = [
 	"Não esqueça, NUNCA jogue lixo na rua ou desmate as arvores.",
-	"So não vem dizendo que nao avisei quando estiver morrendo de calor."
+	"Só não vem dizendo que não avisei quando estiver morrendo de calor."
 ]
 
 @export var nome = "João"

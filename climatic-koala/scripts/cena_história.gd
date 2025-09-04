@@ -3,10 +3,10 @@ extends CanvasLayer
 @onready var dialogo = $MarginContainer/texto/RichTextLabel
 
 var text_lines = [
-	"As mudanças climaticas avançam mais rapido do que nunca...",
-	"O planeta ja mostra sinais de caos e desequilabrio.",
-	"Voce parte rumo a uma vila nas montanhas, ultimo refugio seguro.",
-	"La, encontrara abrigo...",
+	"As mudanças climáticas avançam mais rápido do que nunca...",
+	"O planeta já mostra sinais de caos e desequilíbrio.",
+	"Você parte rumo a uma vila nas montanhas, último refúgio seguro.",
+	"Lá, encontrará abrigo...",
 	"e a chance de transformar o destino do mundo!"
 ]
 

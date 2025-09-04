@@ -10,7 +10,8 @@ var btn2
 var btn3
 
 func _ready():
-	lbl_pergunta = $MarginContainer/HBoxContainer/VBoxContainer/Label
+	#lbl_pergunta = $MarginContainer/HBoxContainer/VBoxContainer/Label
+	lbl_pergunta = $MarginContainer/HBoxContainer/VBoxContainer/LabelPergunta
 	btn1 = $"MarginContainer/HBoxContainer/VBoxContainer/Button 1"
 	btn2 = $"MarginContainer/HBoxContainer/VBoxContainer/Button 2"
 	btn3 = $"MarginContainer/HBoxContainer/VBoxContainer/Button 3"

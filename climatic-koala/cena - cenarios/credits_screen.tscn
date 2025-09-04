@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://du71qnx642nq"]
 
 [ext_resource type="Script" path="res://scripts/credits_screen.gd" id="1_0okqf"]
-[ext_resource type="Texture2D" uid="uid://bl3eun4urgifs" path="res://assets/GUI/bg/summer5/Summer5.png" id="1_bu3i3"]
-[ext_resource type="Texture2D" uid="uid://644vfbkf1b2f" path="res://assets/GUI/logo 2.png" id="1_cgw7j"]
-[ext_resource type="Texture2D" uid="uid://bqojmype451e" path="res://assets/GUI/pixel/Buttons/fechar_maior.png" id="4_f7d1v"]
+[ext_resource type="Texture2D" uid="uid://bil2b1ov82orv" path="res://assets/GUI/bg/summer5/Summer5.png" id="1_bu3i3"]
+[ext_resource type="Texture2D" uid="uid://bcd2fco6njxlv" path="res://assets/GUI/logo 2.png" id="1_cgw7j"]
+[ext_resource type="Texture2D" uid="uid://c7rxhdata27x1" path="res://assets/GUI/pixel/Buttons/fechar_maior.png" id="4_f7d1v"]
 [ext_resource type="Theme" uid="uid://bkom3ia7p5bfe" path="res://text.tres" id="5_udrti"]
 [ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="6_ty1vq"]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=4 uid="uid://b30j0pnew2k7q"]
+[gd_scene load_steps=59 format=4 uid="uid://b30j0pnew2k7q"]
 
 [ext_resource type="Texture2D" uid="uid://tossl6upg3dw" path="res://assets/cenario e itens/Interiores/Interiors_free/16x16/Room_Builder_free_16x16.png" id="1_22gtn"]
 [ext_resource type="Script" path="res://scripts/casa_fuga.gd" id="1_t22sg"]
@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://k8lm0s6ftlfy" path="res://assets/dialog/img/dialog.png" id="6_rh642"]
 [ext_resource type="Texture2D" uid="uid://d173s7folx26p" path="res://assets/dialog/img/seta50.png" id="8_2u84s"]
 [ext_resource type="Texture2D" uid="uid://qb2oblerr5r4" path="res://assets/GUI/pixel/Buttons/pass.png" id="10_3or56"]
-[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="11_ywl00"]
 [ext_resource type="Script" path="res://scripts/texto_fuga.gd" id="12_sg6si"]
 [ext_resource type="Script" path="res://scripts/porta_saida_casa.gd" id="14_88ek8"]
 [ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="15_54nlm"]
@@ -4909,7 +4908,6 @@ shadow_offset = Vector2(1.5, 1)
 
 [sub_resource type="Theme" id="Theme_o45ma"]
 Label/font_sizes/font_size = 27
-Label/fonts/font = ExtResource("11_ywl00")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dy7do"]
 size = Vector2(87.6255, 72)
@@ -4931,7 +4929,6 @@ Panel/styles/panel = SubResource("StyleBoxFlat_qufdg")
 
 [sub_resource type="Theme" id="Theme_0sf2k"]
 Label/font_sizes/font_size = 35
-Label/fonts/font = ExtResource("11_ywl00")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r66nb"]
 size = Vector2(93, 13)

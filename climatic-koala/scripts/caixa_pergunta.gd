@@ -30,7 +30,7 @@ func proxima_pergunta():
 		return
 
 	if Dados.perguntas.size() == 0:
-		lbl_pergunta.text = "Fim! Voce salvou o mundo! Pontos: %d" % Dados.pontos
+		lbl_pergunta.text = "Fim! Você salvou o mundo! Pontos: %d" % Dados.pontos
 		btn1.disabled = true
 		btn2.disabled = true
 		btn3.disabled = true

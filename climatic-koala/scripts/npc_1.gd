@@ -3,8 +3,8 @@ extends Area2D
 @export var animation_to_play: String = "pessoa 1"
 
 @export var dialog_lines = [
-	"O que voce deseja?",
-	"Sinto muito, nao temos no momento."
+	"O que você deseja?",
+	"Sinto muito, não temos no momento."
 ]
 
 @export var nome = "Don"

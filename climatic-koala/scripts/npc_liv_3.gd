@@ -4,7 +4,7 @@ extends Area2D
 
 @export var dialog_lines = [
 	"Eu amo ler sabe... gosto muito de romance.",
-	"Mas arrisco ler terror tambem.",
+	"Mas arrisco ler terror também.",
 	"Hou Hou Hou"
 ]
 

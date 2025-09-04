@@ -4,7 +4,7 @@ extends Area2D
 
 var dialog_lines_1 = [
 	"O dia esta lindo para um encontro.",
-	"Espero que o mundo nao acabe agora...",
+	"Espero que o mundo não acabe agora...",
 	"Ela vai chegar logo, certo?",
 	"Tchau!"
 ]
@@ -12,7 +12,7 @@ var dialog_lines_1 = [
 var dialog_lines_2 = [	
 	"Muito calor!",
 	"Soube que em alguns lugares esta nevando onde nunca nevou.",
-	"Chovendo mais que o normal ou secas terriveis.",
+	"Chovendo mais que o normal ou secas terríveis.",
 	"Isso perde o clima para um encontro.",
 ]
 

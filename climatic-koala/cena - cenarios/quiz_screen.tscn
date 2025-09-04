@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/quiz_screen.gd" id="1_i2cgy"]
 [ext_resource type="Theme" uid="uid://g0x7t2dfn4rk" path="res://new_theme.tres" id="2_fl5pk"]
-[ext_resource type="Texture2D" uid="uid://cc8s1pv2w54or" path="res://assets/GUI/bg/summer8/Summer8.png" id="2_fwxco"]
+[ext_resource type="Texture2D" uid="uid://bbtql5hnssnpu" path="res://assets/GUI/bg/summer8/Summer8.png" id="2_fwxco"]
 [ext_resource type="Theme" uid="uid://da04uawrp5ekp" path="res://label_text.tres" id="3_ed0du"]
-[ext_resource type="Texture2D" uid="uid://dbyoum0b3wjqd" path="res://assets/GUI/pixel/Buttons/fechar.png" id="3_hey7g"]
+[ext_resource type="Texture2D" uid="uid://decj0ynd6jkhj" path="res://assets/GUI/pixel/Buttons/fechar.png" id="3_hey7g"]
 [ext_resource type="Script" path="res://scripts/sai_pergunta.gd" id="4_mnao2"]
 [ext_resource type="Script" path="res://scripts/barra_progresso.gd" id="7_ttte3"]
 [ext_resource type="PackedScene" uid="uid://bt5mvfjtgrmq1" path="res://cena - itens/musica_incio.tscn" id="8_ao364"]
@@ -59,12 +59,12 @@ size_flags_vertical = 4
 theme = SubResource("Theme_4fmh1")
 
 [node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("3_ed0du")
 text = "oi"
 
 [node name="LabelPergunta" type="RichTextLabel" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-visible = false
 layout_mode = 2
 theme = ExtResource("3_ed0du")
 text = "sjsndjsjndjsnjdnsjd"

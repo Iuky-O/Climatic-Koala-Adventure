@@ -3,8 +3,8 @@ extends Area2D
 @export var animation_to_play: String = "pessoa 7"
 
 @export var dialog_lines = [
-	"Sou apoiador de coisas ambientais sabe.",
-	"Mas so como plantas. Isso seria hipocrisia?",
+	"Sou apoiador de causas ambientais sabe.",
+	"Mas só como plantas. Isso seria hipocrisia?",
 	"Por falar nisso... saia da minha cozinha."
 ]
 

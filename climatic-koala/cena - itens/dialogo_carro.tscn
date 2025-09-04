@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1do3au1pi2i3"]
+[gd_scene load_steps=6 format=3 uid="uid://d1do3au1pi2i3"]
 
 [ext_resource type="Script" path="res://scripts/dialogo_carro.gd" id="1_nn8rv"]
 [ext_resource type="Script" path="res://scripts/texto_fuga.gd" id="2_imolp"]
-[ext_resource type="FontFile" uid="uid://hovgocahghj8" path="res://assets/fonts/Marke Eigenbau.ttf" id="2_xe2bk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gu1xc"]
 bg_color = Color(0, 0.364706, 0.705882, 0.67451)
@@ -21,7 +20,6 @@ Panel/styles/panel = SubResource("StyleBoxFlat_gu1xc")
 
 [sub_resource type="Theme" id="Theme_iwo0x"]
 Label/font_sizes/font_size = 23
-Label/fonts/font = ExtResource("2_xe2bk")
 
 [node name="Control" type="Control"]
 layout_mode = 3

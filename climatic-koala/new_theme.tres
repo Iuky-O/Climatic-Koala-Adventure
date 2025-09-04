@@ -1,6 +1,4 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://g0x7t2dfn4rk"]
-
-[ext_resource type="FontFile" uid="uid://dr2sgm2d7pm3h" path="res://assets/fonts/Rev Mini Pixel.ttf" id="1_7a0i1"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://g0x7t2dfn4rk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dr8o4"]
 content_margin_top = 5.0
@@ -52,7 +50,6 @@ border_width_bottom = 1
 [resource]
 Button/colors/font_color = Color(1, 1, 1, 1)
 Button/font_sizes/font_size = 35
-Button/fonts/font = ExtResource("1_7a0i1")
 Button/styles/focus = SubResource("StyleBoxFlat_dr8o4")
 Button/styles/hover = SubResource("StyleBoxFlat_rl5wi")
 Button/styles/hover_pressed = SubResource("StyleBoxFlat_vu1pv")
